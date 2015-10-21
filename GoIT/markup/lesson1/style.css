@@ -1,0 +1,27 @@
+body{
+	background-color: grey;
+}
+.pagestyle{
+	margin: 0 auto;
+	width: 650px;
+	height: 1000px;
+	background-color: white;
+	padding: 30px 50px;
+}
+.info,.why,.contact {
+	border-bottom: 1px solid grey;
+}
+h1 {
+	text-align: center;
+}
+img {
+	display:block; margin:0 auto;
+	width: 600px;
+	height:auto;
+}
+p {
+	font-size: 20px;
+}
+li {
+	font-size: 20px;
+}
