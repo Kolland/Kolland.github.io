@@ -1,5 +1,5 @@
 body{
-	background-color: grey;
+	background-color: #eeeeee;
 }
 .pagestyle{
 	margin: 0 auto;
@@ -8,20 +8,20 @@ body{
 	background-color: white;
 	padding: 30px 50px;
 }
-.info,.why,.contact {
+.line {
 	border-bottom: 1px solid grey;
 }
 h1 {
 	text-align: center;
 }
 img {
-	display:block; margin:0 auto;
+	padding-left: 30px;
 	width: 600px;
 	height:auto;
 }
-p {
+p, li, span{
 	font-size: 20px;
 }
-li {
-	font-size: 20px;
+p {
+	margin-bottom: 2px;
 }
