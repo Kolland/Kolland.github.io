@@ -1,0 +1,116 @@
+body {
+	background-color: #f9f9f9;
+	font-family: 'Open Sans', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	overflow: hidden;
+	background-color: white;
+	margin: 0 auto;
+	padding: 0px 46px;
+	height: 968px;
+	width: 968px;
+	box-shadow: 0px 0px 7px 0px rgba(135,135,135,1);
+}
+/* Header */
+.header img {
+	margin-top: 50px;
+}
+.headMenu {
+	height: 40px;
+	margin-top: 40px;
+	background: linear-gradient(to top, #444343, #5e5e5e);
+}
+.headMenu li {
+	display: inline-block;
+	line-height: 40px; 
+	padding: 0px 20px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+}
+.headMenu a {
+	color: white;
+	font-size: 15px;
+	text-shadow: 1px 1px 2px black;
+}
+.headMenu li:hover {
+	background: linear-gradient(to top, #2f2f2f, #4a4a4a);
+	cursor: pointer;
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+}
+/*Sidebar*/
+.sidebar {
+	float: left;
+	width: 238px;
+	margin-top: 40px;
+	border: 1px solid #c8c8c8;
+}
+.sidebar a {
+	display: block;
+	width: 216px;
+	line-height: 38px;
+	padding-left: 22px;
+	font-size: 13px;
+	color: #656363;
+}
+.sidebar a:hover {
+	background: #f9f9f9;
+	cursor: pointer;
+	width: 203px;
+	padding-left: 35px;
+	font-weight: bold;
+}
+.sidebar li {
+	border-bottom: 1px solid #c8c8c8;
+}
+.sidebar li:last-child {
+	border-bottom: 0px solid #c8c8c8;
+}
+/*Content*/
+.content {
+	float: right;
+	margin-top: 40px;
+	width: 675px;
+}
+.content_img {
+	height: 400px;
+	width: 673px;
+	outline: 1px solid #c8c8c8;
+	background-image: url(../img/content_img.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.content p {
+	padding: 35px 25px;
+	font-size: 13px;
+	line-height: 20px;
+}
+/*Footer*/
+.footer {
+	float: left;
+	width: 100%;
+	height: 40px;
+	margin-top: 25px;
+	background: #e1e1e1;
+}
+.footer li {
+	display: inline-block;
+	padding: 0px 65px 0px 25px;
+	line-height: 40px;
+	font-size: 13px; 
+}
+.footer a{
+	color: black;
+	font-size: 13px;
+}
+.footer a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.footer li:last-child {
+	padding-right: 25px;
+	float:right;
+}
