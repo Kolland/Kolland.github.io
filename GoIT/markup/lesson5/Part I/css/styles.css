@@ -182,12 +182,13 @@ border-bottom: 1px solid #689bcc;
 .checkbox label,.checkbox input{
 	vertical-align:middle;
 	margin: 0;
+	cursor: pointer;
 }
 .btn {
+	display: block;
+	margin: 0 auto;
 	margin-top: 25px;
 	text-align: center;
-}
-.btn input {
 	background: rgba(80,174,219,1);
 background: -moz-linear-gradient(top, rgba(80,174,219,1) 0%, rgba(46,122,196,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(80,174,219,1)), color-stop(100%, rgba(46,122,196,1)));
@@ -204,6 +205,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50aedb', end
 -moz-box-shadow: 0px 0px 5px 1px rgba(54,134,202,1);
 box-shadow: 0px 0px 5px 1px rgba(54,134,202,1);
 border: none;
+cursor: pointer;
 }
 .footer {
 	margin-top: 14px;
