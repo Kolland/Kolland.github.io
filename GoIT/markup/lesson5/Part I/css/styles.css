@@ -141,7 +141,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50afdc', end
 	font-size: 14px;
 	color: #999;
 }
-.inputstyle {
+.inputstyle {								/*is for styling text fields*/
 	width: 257px;
 	height: 35px;
 	padding-left: 19px;
@@ -173,7 +173,7 @@ border-bottom: 1px solid #689bcc;
 ::-webkit-input-placeholder {
 	color:#fffbfb;
 }
-.checkbox {
+.checkbox {										/*is for align checkbox and his title in one line*/
 	margin-top: 20px;
 	margin-left: 142px;
 	color: #cccccc;
