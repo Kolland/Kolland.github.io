@@ -1,0 +1,98 @@
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/*HEADER*/
+.header	{
+	background: #fff url(../img/bg.jpg) top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+.logo {
+	float: left;
+	width: 150px;
+}
+/*Menu Header*/
+.menu {
+	float: right;
+	margin-top: 15px;
+}
+.menu li {
+	float: left;
+	font-family: 'League Gothic', Geneva, sans-serif;
+	border-bottom: 2px solid transparent;
+	font-size: 24px;
+	padding: 0 5px;
+	margin: 0 21px;
+	line-height: 30px;
+	text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
+.menu li:hover {
+	border-bottom: 2px solid #edbfff;
+}
+.menu li:last-child {
+	padding-right: 0;
+	margin-right: 0;
+}
+.menu li:first-child {
+	padding-left: 0;
+	margin-left: 0;
+}
+.wrapper a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+}
+/*Dropdown Menu*/
+.menu_mobile {
+	display: none;
+	position: relative;
+	text-align: center;
+}
+.menu_static {
+	display: inline-block;
+	font-family: 'League Gothic', Geneva, sans-serif;
+	border-bottom: 2px solid #edbfff;
+	color: white;
+	font-size: 24px;
+	line-height: 30px;
+	text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+	text-transform: uppercase;
+	padding: 0 2px;
+}
+.menu_mobile:hover ul{
+	display: block;
+}
+.menu_mobile:hover .menu_static{
+	border-bottom: 2px solid transparent;
+}
+.menu_drop {
+	position: absolute;
+	display: none;
+	width: 243px;
+	background-color: rgba(54, 41, 62, 0.7);
+	border: 1px solid #0f191f;
+	border-radius: 5px;
+}
+.menu_drop li {
+	font-family: 'League Gothic', Geneva, sans-serif;
+	border-bottom: 1px solid #36283e;
+	border-top: 1px solid #5e4769;
+	font-size: 24px;
+	line-height: 38px;
+}
+.menu_drop li:hover {
+	background-color: rgba(54, 41, 62, 0.9);
+	-webkit-box-shadow: inset 0px -2px 0px 0px rgba(237,191,255,1);
+	-moz-box-shadow: inset 0px -2px 0px 0px rgba(237,191,255,1);
+	box-shadow: inset 0px -2px 0px 0px rgba(237,191,255,1);
+}
+.menu_drop a {
+	display: block;
+}
