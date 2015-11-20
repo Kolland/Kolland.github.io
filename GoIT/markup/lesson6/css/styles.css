@@ -148,6 +148,7 @@ box-shadow: 1px 2px 5px 0px rgba(163,163,163,1);
 }
 .menu {
 	margin-left: 130px;
+	float: left;
 }
 .menu li {
 	float: left;
