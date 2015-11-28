@@ -10,39 +10,53 @@
 </head>
 <body>
 	<header class="header">
-		<div class="wrapper--header clearfix">
-			<a class="logo" href="#"><img src="img/logo.png" alt=""></a>
-			<ul class="menu">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">Lorem Ipsum</a></li>
-				<li><a href="#">Dolor Sit Amet</a></li>
+		<div class="header__wrapper clearfix">
+			<a class="header__logo" href="#"><img src="img/logo.png" alt=""></a>
+			<ul class="header__menu">
+				<li class="header__menu__list">
+					<a class="header__menu__link" href="#">Home</a>
+				</li>
+				<li class="header__menu__list">
+					<a class="header__menu__link" href="#">About</a>
+				</li>
+				<li class="header__menu__list">
+					<a class="header__menu__link" href="#">Blog</a>
+				</li>
+				<li class="header__menu__list">
+					<a class="header__menu__link" href="#">Products</a>
+				</li>
+				<li class="header__menu__list">
+					<a class="header__menu__link" href="#">Lorem Ipsum</a>
+				</li>
+				<li class="header__menu__list">
+					<a class="header__menu__link" href="#">Dolor Sit Amet</a>
+				</li>
 			</ul>
 			<div class="menu_mobile clearfix">
-			<span class="menu_static">Home</span>
-			<ul class="menu_drop">
-				<li><a href="#">Home</a>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">Lorem Ipsum</a></li>
-				<li><a href="#">Dolor Sit Amet</a></li>
+			<span class="menu_mobile__static">Home</span>
+			<ul class="menu_mobile__drop">
+				<li class="menu_mobile__item"><a class="menu_mobile__link" href="#">Home</a>
+				<li class="menu_mobile__item"><a  class="menu_mobile__link" href="#">About</a></li>
+				<li class="menu_mobile__item"><a  class="menu_mobile__link" href="#">Blog</a></li>
+				<li class="menu_mobile__item"><a  class="menu_mobile__link" href="#">Products</a></li>
+				<li class="menu_mobile__item"><a  class="menu_mobile__link" href="#">Lorem Ipsum</a></li>
+				<li class="menu_mobile__item"><a  class="menu_mobile__link" href="#">Dolor Sit Amet</a></li>
 			</ul>
 			</div>
 		</div>
 		<div class="slider">
-			<div class="wrapper--slider clearfix">
-<!-- 				<a class="slider__left_arrow"href="#"><img src="img/left_arrow.png" alt=""></a> -->
-				<div class="slider_text">
-					<h2>Lorem Ipsum Dolor</h2>
-					<h3>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
-					<p>Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis. </p>
-				</div>
-				<img class="iphone"src="img/iphone_960.png" alt="iphone">
 
+			<div class="slider__wrapper clearfix">
+						<a class="slider__left_arrow"href="#"><img src="img/left_arrow.png" alt=""></a>
+				<div class="slider__text_block">
+					<h2 class="slider__title">Lorem Ipsum Dolor</h2>
+					<h3 class="slider__subtitle">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
+					<p class="slider__text">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis. </p>
+				</div>
+				<img class="slider__iphone"src="img/iphone_960.png" alt="iphone">
+							<a class="slider__right_arrow"href="#"><img src="img/right_arrow.png" alt=""></a>
 			</div>
+
 		</div>
 		<div class="after-slider">
 			<div class="after-slider__wrapper clearfix">
@@ -86,7 +100,8 @@
 		<div class="social__wrapper clearfix">
 			<div class="testimonials">
 				<div class="testimonials_content">
-					<h4 class="testimonials_title">PingbulLer <span class="title_pink">starts here</span></h4>
+					<h4 class="testimonials_title">PingbulLer</h4>
+					<h4 class="testimonials_title title_pink">starts here</h4>
 					<p class="testimonial_text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
 				</div>
 				<ul class="testimonials__radio-menu">
@@ -108,23 +123,23 @@
 				<h4 class="blog__title">RECENT UPDATES</h4>
 				<div class="blog__update clearfix">
 					<img class="update__img" src="img/upd_img_1.png" alt="">
-					<div class="update__text">
-						<h5 class="update__title">Nunc turpis neque feugiat eget </h5>
-						<p>Posted by Admin on March 13 2012 in Recent News</p>
+					<div class="update__box">
+						<h5 class="update__title">Nunc turpis neque feugiat eget</h5>
+						<p class="update__text">Posted by Admin on March 13 2012 in Recent News</p>
 					</div>
 				</div>
 				<div class="blog__update clearfix">
 					<img class="update__img" src="img/upd_img_2.png" alt="">
-					<div class="update__text">
-						<h5 class="update__title">Nunc turpis neque feugiat eget </h5>
-						<p>Posted by Admin on March 13 2012 in Recent News</p>
+					<div class="update__box">
+						<h5 class="update__title">Nunc turpis neque feugiat eget</h5>
+						<p class="update__text">Posted by Admin on March 13 2012 in Recent News</p>
 					</div>
 				</div>
 				<div class="blog__update clearfix">
 					<img class="update__img" src="img/upd_img_3.png" alt="">
-					<div class="update__text">
-						<h5 class="update__title">Nunc turpis neque feugiat eget </h5>
-						<p>Posted by Admin on March 13 2012 in Recent News</p>
+					<div class="update__box">
+						<h5 class="update__title">Nunc turpis neque feugiat eget</h5>
+						<p class="update__text">Posted by Admin on March 13 2012 in Recent News</p>
 					</div>
 				</div>
 				<a class="blog__more" href="#">READ MORE HERE</a>
@@ -146,7 +161,8 @@
 			<div class="pre_footer__left">
 				<img class="pre_footer__logo" src="img/logo_footer.png" alt="">
 				<p class="pre_footer__copyright">Copyright 2013, Pingbull AS</p>
-				<p class="pre_footer__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque </p>
+				<h4 class="pre_footer__title">NEWS CATEGORIES</h2>
+				<p class="pre_footer__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis  </p>
 			</div>
 			<div class="pre_footer__center">
 				<h4 class="pre_footer__title">RECENT COMMENTS</h2>
@@ -159,7 +175,7 @@
 		</div>
 	</section>
 	<footer class="footer">
-		<div class="wrapper_footer clearfix">
+		<div class="footer__wrapper clearfix">
 			<ul class="footer__menu clearfix">
 				<li class="footer__menu__list">
 					<a class="footer__menu__link" href="#">Home</a>
