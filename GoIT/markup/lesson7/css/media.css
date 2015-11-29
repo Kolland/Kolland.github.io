@@ -46,6 +46,12 @@
 		margin-right: 14px;
 		margin-top: -101px;
 	}
+	.slider__left_arrow {
+	left: 0;
+	}
+	.slider__right_arrow {
+	right: 0;
+	}
 	.after-slider__wrapper {
 		width: 720px;
 		padding-top: 38px;
@@ -197,6 +203,12 @@
 		margin-right: 13px;
 		margin-top: -8px;
 		width: 190px;
+	}
+	.slider__left_arrow {
+		line-height: 246px;
+	}
+	.slider__right_arrow {
+		line-height: 246px;
 	}
 	.after-slider__wrapper {
 		width: 440px;
@@ -389,6 +401,12 @@
 	}
 	.slider__iphone {
 		display: none;
+	}
+	.slider__left_arrow {
+		line-height: 221px;
+	}
+	.slider__right_arrow {
+		line-height: 221px;
 	}
 	.after-slider__wrapper {
 		width: 280px;

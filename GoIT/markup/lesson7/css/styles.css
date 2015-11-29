@@ -108,6 +108,7 @@
 	margin-top: 163px;
 	height: 400px;
 	background-color: rgba(0, 0, 0, 0.2);
+	position: relative;
 }
 .slider__wrapper {
 	width: 960px;
@@ -144,14 +145,25 @@
 	margin-top: -93px;
 }
 .slider__left_arrow {
-	height: 100%;
+	width: 22px;
 	position: absolute;
-	top: 10px;
+	top: 0;
 	left: 10px;
+	line-height: 400px;
+}
+.slider__right_arrow {
+	width: 22px;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	line-height: 400px;
+}
+.arrow__img {
+	vertical-align: middle;
 }
 .slider__right_arrow {
 	position: absolute;
-	top: 10px;
+	top: 0px;
 	right: 10px;
 }
 .after-slider__wrapper {
