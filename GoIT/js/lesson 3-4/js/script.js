@@ -1,53 +1,82 @@
-var testTitle = document.createElement('h3');
-testTitle.classList.add('testTitle');
-testTitle.innerHTML = 'Тест по программированию';
+var app = {
+	createElement: function (tagParams) {
+		var element = document.createElement(tagParams.tagName);
+		element.className = tagParams.tagClass;
+		element.innerHTML = tagParams.tagContent;
+		if (tagParams.tagName === 'input') {
+			element.setAttribute('type', tagParams.inputType);
+		}
+		if (tagParams.inputType === 'submit') {
+			element.setAttribute('value', tagParams.inputValue);
+		}
+		tagParams.tagParrent.appendChild(element);
+		return element;
+	},
+	generateQuestions: function(QuestionsAmount, AnswersAmount) {
+		for (var i = 0; i < QuestionsAmount; i++) {
+			this.createElement ({
+				tagName: 'h3',
+				tagClass: 'text-center bg-primary',
+				tagContent: 'Вопрос №' + (i +1),
+				tagParrent: centerDiv
+			});
+			var ul = this.createElement ({
+					tagName: 'ul',
+					tagClass: 'center-block',
+					tagContent: '',
+					tagParrent: centerDiv
+			})
+			for (var j = 0; j < AnswersAmount; j++) {
+				var li = this.createElement ({
+					tagName: 'li',
+					tagClass: 'list-group-item',
+					tagContent: '',
+					tagParrent: ul
+				})
+				var label = this.createElement ({
+					tagName: 'label',
+					tagContent: 'Вариант ответа №' + (j +1),
+					tagParrent: li
+				})
+				this.createElement ({
+					tagName: 'input',
+					tagClass: 'pull-left',
+					inputType: 'checkbox',
+					tagContent: '',
+					tagParrent: label
+				})
+			};
+		};
+	}
+}
 
-var question1 = document.createElement('p');
-question1.classList.add('question');
-question1.innerHTML = '1.Вопрос №1';
-var question2 = document.createElement('p');
-question2.classList.add('question');
-question2.innerHTML = '1.Вопрос №1';
-var question3 = document.createElement('p');
-question3.classList.add('question');
-question3.innerHTML = '1.Вопрос №1';
+var body = document.querySelector('body');
+//generate div bootsrap columns
+for (var i = 0; i < 3; i++) {
+	app.createElement({
+	tagName: 'div',
+	tagClass: 'col-md-4',
+	tagContent: '',
+	tagParrent: body
+	})
+};
 
-var form1 = document.createElement('form1');
-form1.setAttribute("method", "post");
-var ul1 = document.createElement('ul1');
-form1.appendChild(ul1);
-var li = document.createElement('li');
-ul1.appendChild(li);
-var lable = document.createElement('lable');
-li.appendChild(lable);
-var checkbox = document.createElement('input');
-checkbox.setAttribute("type", "checkbox");
-lable.appendChild(checkbox);
-lable.innerHTML += 'Вариант ответа №1';
-var li = document.createElement('li');
-ul1.appendChild(li);
-var lable = document.createElement('lable');
-li.appendChild(lable);
-var checkbox = document.createElement('input');
-checkbox.setAttribute("type", "checkbox");
-lable.appendChild(checkbox);
-lable.innerHTML += 'Вариант ответа №2';
-var li = document.createElement('li');
-ul1.appendChild(li);
-var lable = document.createElement('lable');
-li.appendChild(lable);
-var checkbox = document.createElement('input');
-checkbox.setAttribute("type", "checkbox");
-lable.appendChild(checkbox);
-lable.innerHTML += 'Вариант ответа №3';
+var centerDiv = document.getElementsByTagName('div')[1];
 
+app.createElement({
+	tagName: 'h2',
+	tagClass: 'text-center bg-danger',
+	tagContent: 'Тест по программированию',
+	tagParrent: centerDiv
+	})
 
-var bodyVar = document.getElementsByTagName ('body');
-console.log(bodyVar);
-bodyVar[0].appendChild(testTitle);
-bodyVar[0].appendChild(question1);
-bodyVar[0].appendChild(form1);
-bodyVar[0].appendChild(question2);
-bodyVar[0].appendChild(question3);
+app.generateQuestions(3, 3);
 
-// console.log (dynamicHTML.body);
+app.createElement({
+	tagName: 'input',
+	inputType: 'submit',
+	tagClass: 'btn btn-lg btn-success center-block',
+	inputValue: 'Проверить мои результаты',
+	tagParrent: centerDiv
+	})
+
