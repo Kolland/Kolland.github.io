@@ -21,19 +21,14 @@ for (var i = 0; i < 5; i++) {
 	namesArr.push(prompt('Заполните масив имен:'));
 };
 
-var j = 0;
-
-for (var i = 0; i <= j; i++) {
-	var userName = prompt('Введите свое имя:')
-	if (userName === '') {
-		j++
-	}
-};
+var userName = prompt('Введите свое имя:');
 
 for (var i = 0; i < namesArr.length; i++) {
-	if (namesArr[i] === userName) {
+	if (namesArr[i] === '') {
+		flag = false;
+	} else if (namesArr[i] === userName) {
 		flag = true;
-	};
+		};
 };
 
 if (flag) {
