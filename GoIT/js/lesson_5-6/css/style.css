@@ -1,0 +1,12 @@
+p {
+  display: inline-block;
+}
+.show_block {
+	display: none;
+}
+ul {
+	display: none;
+}
+.arrow_down {
+	display: none;
+}
