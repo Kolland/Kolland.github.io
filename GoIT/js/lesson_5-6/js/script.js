@@ -10,6 +10,7 @@ var timer = {
 }
 // Bootstrap greed and buttons generation
 var body = document.querySelector('body');
+body.className = "bg-primary";
 for (var i = 0; i < 2; i++) {
 	timer.createElement({
 	tagName: 'div',
@@ -21,19 +22,19 @@ for (var i = 0; i < 2; i++) {
 var btnsRow = document.querySelectorAll('.row')[1];
 timer.createElement({
 	tagName: 'div',
-	tagClass: 'col-md-12 bg-primary h1 text-center counterDisplay',
+	tagClass: 'col-md-12 h1 text-center counterDisplay',
 	tagContent: '00 : 00 : 00 : 00',
 	tagParrent: document.querySelectorAll('.row')[0]
 });
 timer.createElement({
 	tagName: 'div',
-	tagClass: 'col-xs-1',
+	tagClass: 'col-xs-2',
 	tagContent: '',
 	tagParrent: btnsRow
 });
 timer.createElement({
 	tagName: 'div',
-	tagClass: 'col-xs-4 btn btn-success startBtn',
+	tagClass: 'col-xs-3 btn btn-success startBtn',
 	tagContent: '',
 	tagParrent: btnsRow
 });
@@ -51,7 +52,7 @@ timer.createElement({
 });
 timer.createElement({
 	tagName: 'div',
-	tagClass: 'col-xs-4 btn btn-danger clearBtn',
+	tagClass: 'col-xs-3 btn btn-danger clearBtn',
 	tagContent: '',
 	tagParrent: btnsRow
 });
@@ -63,14 +64,14 @@ timer.createElement({
 });
 timer.createElement({
 	tagName: 'div',
-	tagClass: 'col-xs-1',
+	tagClass: 'col-xs-2',
 	tagContent: '',
 	tagParrent: btnsRow
 });
 var startBtn = document.querySelector('.startBtn');
 var clearBtn = document.querySelector('.clearBtn');
 var counterDisplay = document.querySelector('.counterDisplay');
-counterDisplay.style.fontSize.30px;
+counterDisplay.style.fontSize="190px";
 
 var milliseconds = 0;
 var seconds = 0;
