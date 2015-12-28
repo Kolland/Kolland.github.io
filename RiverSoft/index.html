@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RiverSoft test</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<header class="clearfix">
+		<a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+		<h3 class="description">Просмотр мест</h3>
+		<p class="exit">Выход</p>
+	</header>
+	<nav class="head-nav clearfix">
+		<a class="nav-arrow_back" href="#"><img src="img/arrow_back.png" alt="arrow_back"></a>
+		<ul class="head-nav-list clearfix">
+			<li class="head-nav-item"><a class="head-nav-link"href="#">Cписок мест</a></li>
+			<li class="head-nav-item"><a class="head-nav-link"href="#">Избранные</a></li>
+			<li class="head-nav-item"><a class="head-nav-link"href="#">История</a></li>
+			<li class="head-nav-item"><a class="head-nav-link"href="#">Карта</a></li>
+		</ul>
+	</nav>
+	<div class="wrapper">
+		<aside class="sidebar clearfix">
+			<a class="user clearfix" href="">
+				<img class="user-pic" src="img/user_pic.png" alt="User_picture">
+				<p class="user-name">Юля футболист</p></a>
+			<ul class="sidebar-list">
+				<li class="sidebar-list-item side--messages"><a href="#" class="sidebar-list-link">Сообщение</a></li>
+				<li class="sidebar-list-item side--events"><a href="#" class="sidebar-list-link">События</a></li>
+				<li class="sidebar-list-item side--friends"><a href="#" class="sidebar-list-link">Друзья</a></li>
+				<li class="sidebar-list-item side--templates"><a href="#" class="sidebar-list-link">Шаблоны</a></li>
+				<li class="sidebar-list-item side--tasks"><a href="#" class="sidebar-list-link">Задачи</a></li>
+				<li class="sidebar-list-item side--places"><a href="#" class="sidebar-list-link">Места</a></li>
+				<li class="sidebar-list-item side--pref"><a href="#" class="sidebar-list-link">Настройки</a></li>
+			</ul>
+		</aside>
+		<main class="places-list">
+			<div class="place clearfix" style="display: none">
+				<div class="place-pic">
+					<img src="img/places_pic/sharada.jpg" alt="Шарада">
+				</div>
+				<div class="place-text">
+					<h4 class="place-text-title">База отдыха “Шарада”</h4>
+					<p class="place-text-adress">адрес: <span class="adress--black">г. Кременчуг ул. Лейтенанта Днепрова,111</span></p>
+					<p class="place-text-contacts">контакты:   +38 (067) 941-40-11, +38 (067) 186-87-37<span class="contacts--email">sharadabase@mail.ru , sharadabase@yandex.ua</span></p>
+					<p class="place-text-descr">Коттеджи, детская площадка, бассейн, мангал, турецкая баня, русская баня, футбол (крытый зал), футбол (открытая площадь), теннис (крытый зал), теннис (открытый корт), фитнес, прогулки на катере, вейкборд, рыб...</p>
+					<ul class="place-text-stars">
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/half_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/empty_star.png" alt=""></li>
+					</ul>
+					<p class="place-text-rating">3.45</p>
+					<p class="place-text-voice_amount">(оценок: 20)</p>
+				</div>
+			</div>
+			<div class="place clearfix">
+				<div class="place-pic">
+					<img src="img/places_pic/mayak.jpg" alt="Маяк">
+				</div>
+				<div class="place-text">
+					<h4 class="place-text-title">База отдыха “Маяк”</h4>
+					<p class="place-text-adress">адрес: <span class="adress--black">c. Каменные Потоки, ул. Ленина, 149 (на р. Днепр)</span></p>
+					<p class="place-text-contacts">контакты:   (067) 535-30-13, (0536) 70-10-20</p>
+					<p class="place-text-descr">Домики и номера, детская площадка, прокат велосипедов, теннисный корт, настольный теннис, бильярд, прогулки на лодках и катамаранах, беседки, проведение свадеб, банкеты и корпоративы, конференц-сервис.</p>
+					<ul class="place-text-stars">
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/half_star.png" alt=""></li>
+					</ul>
+					<p class="place-text-rating">4.8</p>
+					<p class="place-text-voice_amount">(оценок: 41)</p>
+				</div>
+			</div>
+			<div class="place clearfix">
+				<div class="place-pic">
+					<img src="img/places_pic/lipoviy_ray.jpg" alt="Липовый рай">
+				</div>
+				<div class="place-text">
+					<h4 class="place-text-title">Гостинечный комплекс “Липовый рай”</h4>
+					<p class="place-text-adress">адрес: <span class="adress--black">Полтавская область, с. Липовое, 79 км от Кременчуга на Киев</span></p>
+					<p class="place-text-contacts">контакты:   (067) 992 00 00</p>
+					<p class="place-text-descr">VIP домики, теннисный корт, конференц-сервис, детская площадка, прогулки на лодках и катамаранах, банный комплекс, рыбалка, охота, ресторан.</p>
+					<ul class="place-text-stars">
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+					</ul>
+					<p class="place-text-rating">5</p>
+					<p class="place-text-voice_amount">(оценок: 37)</p>
+				</div>
+			</div>
+			<div class="place clearfix">
+				<div class="place-pic">
+					<img src="img/places_pic/no_img.png" alt="Укртатнафта">
+				</div>
+				<div class="place-text">
+					<h4 class="place-text-title">Комплекс спортивных сооружений “Укртатнафта”</h4>
+					<p class="place-text-adress">адрес: <span class="adress--black">г. Кременчуг, проспект 50 лет Октября, 33</span></p>
+					<p class="place-text-contacts">контакты:  -</p>
+					<p class="place-text-descr">Бассейн для взрослых, бассейн для детей, Тренажерный зал, спортивный зал для волейбола, футбольное поле, поле для мини-футбола, площадка для пляжного волейбола.</p>
+					<ul class="place-text-stars">
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/half_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/empty_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/empty_star.png" alt=""></li>
+					</ul>
+					<p class="place-text-rating">2.8</p>
+					<p class="place-text-voice_amount">(оценок: 12)</p>
+				</div>
+			</div>
+			<div class="place clearfix">
+				<div class="place-pic">
+					<img src="img/places_pic/cityclub.jpg" alt="CityClub">
+				</div>
+				<div class="place-text">
+					<h4 class="place-text-title">Пляжный клуб “CityClub”</h4>
+					<p class="place-text-adress">адрес: <span class="adress--black">г. Комсомольск, ул.Мира 39</span></p>
+					<p class="place-text-contacts">контакты:   +3 8(093) 522-77-44</p>
+					<p class="place-text-descr">Детская площадка, бассейн, ресторан, ночной клуб, кальян, караоке.</p>
+					<ul class="place-text-stars">
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/half_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/empty_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/empty_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/empty_star.png" alt=""></li>
+					</ul>
+					<p class="place-text-rating">1.3</p>
+					<p class="place-text-voice_amount">(оценок: 4)</p>
+				</div>
+			</div>
+			<div class="place clearfix">
+				<div class="place-pic">
+					<img src="img/places_pic/no_img.png" alt="Балу">
+				</div>
+				<div class="place-text">
+					<h4 class="place-text-title">Спортивный комплекс “Балу”</h4>
+					<p class="place-text-adress">адрес: <span class="adress--black">пгт. Власовка, станция «Днепр-2», улица Садовая, 29 , р. Днепр</span></p>
+					<p class="place-text-contacts">контакты:   (050) 309-09-73, (097) 769-43-13</p>
+					<p class="place-text-descr">Отель, мини озеро, летняя площадка, рыбалка, сауна, бильярд, теннисный корт, площадка для волейбола, площадка для игры в мини-футбол.</p>
+					<ul class="place-text-stars">
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/half_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/empty_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/empty_star.png" alt=""></li>
+					</ul>
+					<p class="place-text-rating">2.5</p>
+					<p class="place-text-voice_amount">(оценок: 8)</p>
+				</div>
+			</div>
+			<div class="place clearfix">
+				<div class="place-pic">
+					<img src="img/places_pic/misto.jpg" alt="Мисто">
+				</div>
+				<div class="place-text">
+					<h4 class="place-text-title">Клуб “Мисто”</h4>
+					<p class="place-text-adress">адрес: <span class="adress--black">г. Харьков, ул. Клочковская 190-а</span></p>
+					<p class="place-text-contacts">контакты:   (057) 758-17-02, (095) 238-28-02</p>
+					<p class="place-text-descr">Диско-зона, Lounge Bar, караоке, сауна, spa-зона, фитнес, боулинг, ресторан, пивная.</p>
+					<ul class="place-text-stars">
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+					</ul>
+					<p class="place-text-rating">5.0</p>
+					<p class="place-text-voice_amount">(оценок: 82)</p>
+				</div>
+			</div>
+			<div class="place clearfix">
+				<div class="place-pic">
+					<img src="img/places_pic/chayka.jpg" alt="Чайка">
+				</div>
+				<div class="place-text">
+					<h4 class="place-text-title">База отдыха “Чайка”</h4>
+					<p class="place-text-adress">адрес: <span class="adress--black">с. Нагорное, Светловодский р-н</span></p>
+					<p class="place-text-contacts">контакты:   +38(067)532-90-69</span></p>
+					<p class="place-text-descr">Домики, беседки, мангалы, баня.</p>
+					<ul class="place-text-stars">
+						<li class="place-text-star"><img src="img/full_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/half_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/empty_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/empty_star.png" alt=""></li>
+						<li class="place-text-star"><img src="img/empty_star.png" alt=""></li>
+					</ul>
+					<p class="place-text-rating">1.6</p>
+					<p class="place-text-voice_amount">(оценок: 18)</p>
+				</div>
+			</div>
+			<button class="place-add_btn">
+				<span>Add places</span>
+			</button>
+		</main>
+	</div>
+	<div class="feedback-btn">
+		<p class="feedback-text">Связаться с нами</p>
+	</div>
+	<div id="window" class="modal_places_wrap">
+		<div class="modal_places">
+			<button class="modal_places-exit_btn">Exit</button>
+			<button class="add_all">Добавить все</button>
+		</div>
+
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
