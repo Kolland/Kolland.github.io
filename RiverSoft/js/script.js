@@ -84,7 +84,6 @@ $(document).ready(function(){
 		amount = $(".place:visible").length;
 		amountText.text('Количество добавленых локаций:' + amount);
 	};
-	console.log(amount);
 	
 })
 
