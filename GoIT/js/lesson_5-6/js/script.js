@@ -84,7 +84,7 @@ var secondsText;
 var minutesText;
 var hoursText;
 
-function DisplayTimer() {
+function displayTimer() {
 	// Counter logic
 	milliseconds = milliseconds + 1;
 	if (milliseconds === 100) {
@@ -93,11 +93,11 @@ function DisplayTimer() {
 	if (milliseconds === 100) {
 		milliseconds = 0;
 	};
-	if (seconds > 59) {
+	if (seconds === 60) {
 		seconds = 0;
 		minutes++;
 	};
-	if (minutes > 59) {
+	if (minutes === 60) {
 		minutes = 0;
 		hours++;
 	};
@@ -126,36 +126,38 @@ function DisplayTimer() {
 	time = hoursText + ' : ' + minutesText + ' : ' + secondsText + ' : ' + millisecondsText;
 	counterDisplay.innerHTML = time;
 }
+var counter = {
 
-function startCounter() {
-	document.querySelector('.startText').innerHTML = 'Pause';
-	timer = setInterval (DisplayTimer, 10);
-	startBtn.removeEventListener ("click", startCounter);
-	startBtn.addEventListener ("click", pauseCounter);
+	start: function() {
+		document.querySelector('.startText').innerHTML = 'Pause';
+		timer = setInterval (displayTimer, 10);
+		startBtn.removeEventListener ("click", counter.start);
+		startBtn.addEventListener ("click", counter.pause);
+	},
+
+	pause: function() {
+		document.querySelector('.startText').innerHTML = 'Continue';
+		clearInterval(timer);
+		counterDisplay.innerHTML = time;
+		startBtn.removeEventListener ("click", counter.pause);
+		startBtn.addEventListener ("click", counter.start);
+	},
+
+	reset: function() {
+		document.querySelector('.startText').innerHTML = 'Start';
+		counterDisplay.innerHTML = '00 : 00 : 00 : 00';
+		clearInterval (timer);
+		startBtn.removeEventListener ("click", counter.pause);
+		startBtn.addEventListener ("click", counter.start);
+		milliseconds = 0;
+		seconds = 0;
+		minutes = 0;
+		hours = 0;
+	}
 }
 
-function pauseCounter() {
-	document.querySelector('.startText').innerHTML = 'Continue';
-	clearInterval(timer);
-	counterDisplay.innerHTML = time;
-	startBtn.removeEventListener ("click", pauseCounter);
-	startBtn.addEventListener ("click", startCounter);
-}
-
-function resetCounter() {
-	document.querySelector('.startText').innerHTML = 'Start';
-	counterDisplay.innerHTML = '00 : 00 : 00 : 00';
-	clearInterval (timer);
-	startBtn.removeEventListener ("click", pauseCounter);
-	startBtn.addEventListener ("click", startCounter);
-	milliseconds = 0;
-	seconds = 0;
-	minutes = 0;
-	hours = 0;
-}
-
-startBtn.addEventListener ("click", startCounter);
-clearBtn.addEventListener ("click", resetCounter);
+startBtn.addEventListener ("click", counter.start);
+clearBtn.addEventListener ("click", counter.reset);
 
 
 
