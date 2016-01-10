@@ -45,9 +45,27 @@ div{
 li {
 	list-style: none;
 }
+.menu{
+	background-color: red;
+}
 .menu li{
 	display: inline-block;
+	position: relative;
+	width: 200px;
+	background-color: green;
 }
-.submenu {
+.submenu_down {
 	display: none;
+	height: 0;
+	position: absolute;
+	padding: 0;
+}
+.submenu_right {
+	display: none;
+	width: 0;
+	position: absolute;
+	top: 0;
+	padding: 0;
+	left: 200px;
+
 }

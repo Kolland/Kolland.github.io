@@ -85,13 +85,6 @@ $(document).ready(function(){
 	}
 
 
-	// dropdown menu
-	var $links = $('.menu a');
 
-	$links.on('click' function(e){
-		var $submenu = $(this).siblings('.submenu');
-		e.prevenDefault();
-		console.log(submenu);
-	}) 
 });	
 
