@@ -1,13 +1,23 @@
+/*main*/
+div {
+	text-align: center;
+}
+li {
+	list-style: none;
+}
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 /*checkbox js*/
 .niceCheck {
-width: 17px;
-height: 17px;
-display: inline-block;
-cursor: pointer;
-background: url(../img/checkbox-sprite.png);
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../img/checkbox-sprite.png);
 }
 .niceCheck input {
-display: none;
+	display: none;
 }
 
 /*checkbox css*/
@@ -29,43 +39,45 @@ display: none;
 	margin-left: 15px;
 }
 .css_chk:checked + .css_label:after {
-background-position: 0 -17px;
+	background-position: 0 -17px;
 }
 .css_label:hover:after {
-background-position: 0 -34px;
+	background-position: 0 -34px;
 }
 .css_chk:checked + .css_label:hover:after {
-background-position: 0 -51px;
+	background-position: 0 -51px;
 }
 
-div{
-	text-align: center;
-}
-
-li {
-	list-style: none;
-}
+/*dropdown menu*/
 .menu{
-	background-color: red;
+	background-color: rgb(85, 0, 0);
 }
 .menu li{
 	display: inline-block;
 	position: relative;
-	width: 200px;
-	background-color: green;
+	line-height: 40px;
+	width: 150px;
+	background-color: transparent;
+}
+.menu li:hover{
+	background-color: rgb(128, 21, 21);
+}
+.menu a {
+	text-align: center;
+	display: block;
+	padding: 0 25px;
+	color: rgb(255, 196, 196);
+	text-decoration: none;
 }
 .submenu_down {
 	display: none;
-	height: 0;
 	position: absolute;
 	padding: 0;
 }
 .submenu_right {
 	display: none;
-	width: 0;
+	width: 100%;
 	position: absolute;
 	top: 0;
 	padding: 0;
-	left: 200px;
-
 }

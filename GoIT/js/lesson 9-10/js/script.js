@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
 //jcarousel
-
     $(function() {
         $('.jcarousel').jcarousel();
 
@@ -38,7 +37,6 @@ $(document).ready(function(){
     });
 
 //select
-
 	var params = {
         changedEl: "select",
         visRows: 5,
@@ -47,21 +45,17 @@ $(document).ready(function(){
     cuSel(params);
 
 // checkbox
-
-	
-
 	$(".niceCheck").mousedown(
 		function() {
 		     changeCheck(jQuery(this));
 		});
 
-	jQuery(".niceCheck").each(
+	$(".niceCheck").each(
 		function() { 
 		    changeCheckStart(jQuery(this)); 
 		});
 
-	function changeCheck(el)
-	{
+	function changeCheck(el){
 	     var el = el,
 	          input = el.find("input").eq(0);
 	   	 if(!input.attr("checked")) {
@@ -74,8 +68,7 @@ $(document).ready(function(){
 	     return true;
 	}
 
-	function changeCheckStart(el)
-	{
+	function changeCheckStart(el){
 	var el = el,
 			input = el.find("input").eq(0);
 	      if(input.attr("checked")) {
@@ -83,8 +76,6 @@ $(document).ready(function(){
 			}
 	     return true;
 	}
-
-
 
 });	
 
