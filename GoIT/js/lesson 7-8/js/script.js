@@ -30,26 +30,32 @@ $(document).ready(function () {
 	$('#tabs-1').text('Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.');
 	$('#tabs-2').text('Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.');
 	$('#tabs-3').text('Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.');
+	
 	$('<p>').appendTo('#tabs-3').text('Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.');
 
+	$('.tabs_text').hide();
   	$('#tabs-1').show();
-	$('#tabs-2').hide();
-	$('#tabs-3').hide();
+  	$($('.list_link').get(0)).addClass('list--active')
 
 	$('[href = #tabs-1]').click(function() {
-		$('#tabs-1').show();
-		$('#tabs-2').hide();
-		$('#tabs-3').hide();
+		$('.list_link').removeClass('list--active');
+		$(this).addClass('list--active');
+		$('.tabs_text').hide();
+	  	$('#tabs-1').show();
 	});
+
 	$('[href = #tabs-2]').click(function() {
-		$('#tabs-1').hide();
-		$('#tabs-2').show();
-		$('#tabs-3').hide();
+		$('.list_link').removeClass('list--active');
+		$(this).addClass('list--active');
+		$('.tabs_text').hide()
+	  	$('#tabs-2').show();
 	});
+
 	$('[href = #tabs-3]').click(function() {
-		$('#tabs-1').hide();
-		$('#tabs-2').hide();
-		$('#tabs-3').show();
+		$('.list_link').removeClass('list--active');
+		$(this).addClass('list--active');
+		$('.tabs_text').hide();
+	  	$('#tabs-3').show();
 	});
 
 
@@ -88,68 +94,143 @@ $(document).ready(function () {
 		$($(element.selector).get(element.number)).text(element.content);
 	};
 
-	addAttributes({
-		selector: 'label',
-		number: 0,
-		attFor: 'firstname',
-		content: 'First Name'
-	});
 
-	addAttributes({
-		selector: 'label',
-		number: 1,
-		attFor: 'secondname',
-		content: 'Second Name'
-	});
+	for (var i = -1; i < 3; ++i) {
+		if (i == 0) {
+			console.log('lfjaldfj')
+			debugger
+			addAttributes({
+				selector: 'label',
+				number: i,
+				attFor: 'firstname',
+				content: 'First Name'
+			});
 
-	addAttributes({
-		selector: 'label',
-		number: 2,
-		attFor: 'adress',
-		content: 'Adress'
-	});
+			addAttributes({
+				selector: 'input',
+				number: i,
+				attId: 'firstname',
+				attName: 'firstname',
+				attTitle: 'Please provide your firstname.'
+			});
 
-	addAttributes({
-		selector: 'input',
-		number: 0,
-		attId: 'firstname',
-		attName: 'firstname',
-		attTitle: 'Please provide your firstname.'
-	});
+			addAttributes({
+				selector: '.tooltip',
+				number: i,
+				content: 'Please provide your firstname.'
+			});
+		};
 
-	addAttributes({
-		selector: 'input',
-		number: 1,
-		attId: 'secondname',
-		attName: 'secondname',
-		attTitle: 'Please provide your lastname.'
-	});
+		if (i == 1) {
+			// debugger
+			addAttributes({
+				selector: 'label',
+				number: i,
+				attFor: 'secondname',
+				content: 'Second Name'
+			});
 
-	addAttributes({
-		selector: 'input',
-		number: 2,
-		attId: 'adress',
-		attName: 'adress',
-		attTitle: 'Your home or work address.'
-	});
+			addAttributes({
+				selector: 'input',
+				number: i,
+				attId: 'secondname',
+				attName: 'secondname',
+				attTitle: 'Please provide your secondname.'
+			});
 
-	addAttributes({
-		selector: '.tooltip',
-		number: 0,
-		content: 'Please provide your firstname.'
-	});
+			addAttributes({
+				selector: '.tooltip',
+				number: i,
+				content: 'Please provide your secondname.'
+			});
+		};
 
-	addAttributes({
-		selector: '.tooltip',
-		number: 1,
-		content: 'Please provide your lastname.'
-	});
+		if (i == 2) {
+			addAttributes({
+				selector: 'label',
+				number: i,
+				attFor: 'adress',
+				content: 'Adress'
+			});
 
-	addAttributes({
-		selector: '.tooltip',
-		number: 2,
-		content: 'Your home or work address.'
-	});
+			addAttributes({
+				selector: 'input',
+				number: i,
+				attId: 'adress',
+				attName: 'adress',
+				attTitle: 'Your home or work address.'
+			});
+
+			addAttributes({
+				selector: '.tooltip',
+				number: i,
+				content: 'Your home or work address.'
+			});
+		};
+		
+	};
+	// addAttributes({
+	// 	selector: 'label',
+	// 	number: 0,
+	// 	attFor: 'firstname',
+	// 	content: 'First Name'
+	// });
+
+	// addAttributes({
+	// 	selector: 'label',
+	// 	number: 1,
+	// 	attFor: 'secondname',
+	// 	content: 'Second Name'
+	// });
+
+	// addAttributes({
+	// 	selector: 'label',
+	// 	number: 2,
+	// 	attFor: 'adress',
+	// 	content: 'Adress'
+	// });
+
+	// addAttributes({
+	// 	selector: 'input',
+	// 	number: 0,
+	// 	attId: 'firstname',
+	// 	attName: 'firstname',
+	// 	attTitle: 'Please provide your firstname.'
+	// });
+
+	// addAttributes({
+	// 	selector: 'input',
+	// 	number: 1,
+	// 	attId: 'secondname',
+	// 	attName: 'secondname',
+	// 	attTitle: 'Please provide your lastname.'
+	// });
+
+	// addAttributes({
+	// 	selector: 'input',
+	// 	number: 2,
+	// 	attId: 'adress',
+	// 	attName: 'adress',
+	// 	attTitle: 'Your home or work address.'
+	// });
+
+	// addAttributes({
+	// 	selector: '.tooltip',
+	// 	number: 0,
+	// 	content: 'Please provide your firstname.'
+	// });
+
+	// addAttributes({
+	// 	selector: '.tooltip',
+	// 	number: 1,
+	// 	content: 'Please provide your lastname.'
+	// });
+
+	// addAttributes({
+	// 	selector: '.tooltip',
+	// 	number: 2,
+	// 	content: 'Your home or work address.'
+	// });
 
 // Tooltip hover logic
 
