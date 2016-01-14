@@ -95,8 +95,8 @@ $(document).ready(function () {
 	};
 
 
-	for (var i = -1; i < 3; ++i) {
-		if (i == 0) {
+	for (var i = 0; i < 3; ++i) {
+		if (i === 0) {
 			console.log('lfjaldfj')
 			debugger
 			addAttributes({
@@ -121,8 +121,7 @@ $(document).ready(function () {
 			});
 		};
 
-		if (i == 1) {
-			// debugger
+		if (i === 1) {
 			addAttributes({
 				selector: 'label',
 				number: i,
@@ -145,7 +144,7 @@ $(document).ready(function () {
 			});
 		};
 
-		if (i == 2) {
+		if (i === 2) {
 			addAttributes({
 				selector: 'label',
 				number: i,
@@ -169,68 +168,6 @@ $(document).ready(function () {
 		};
 		
 	};
-	// addAttributes({
-	// 	selector: 'label',
-	// 	number: 0,
-	// 	attFor: 'firstname',
-	// 	content: 'First Name'
-	// });
-
-	// addAttributes({
-	// 	selector: 'label',
-	// 	number: 1,
-	// 	attFor: 'secondname',
-	// 	content: 'Second Name'
-	// });
-
-	// addAttributes({
-	// 	selector: 'label',
-	// 	number: 2,
-	// 	attFor: 'adress',
-	// 	content: 'Adress'
-	// });
-
-	// addAttributes({
-	// 	selector: 'input',
-	// 	number: 0,
-	// 	attId: 'firstname',
-	// 	attName: 'firstname',
-	// 	attTitle: 'Please provide your firstname.'
-	// });
-
-	// addAttributes({
-	// 	selector: 'input',
-	// 	number: 1,
-	// 	attId: 'secondname',
-	// 	attName: 'secondname',
-	// 	attTitle: 'Please provide your lastname.'
-	// });
-
-	// addAttributes({
-	// 	selector: 'input',
-	// 	number: 2,
-	// 	attId: 'adress',
-	// 	attName: 'adress',
-	// 	attTitle: 'Your home or work address.'
-	// });
-
-	// addAttributes({
-	// 	selector: '.tooltip',
-	// 	number: 0,
-	// 	content: 'Please provide your firstname.'
-	// });
-
-	// addAttributes({
-	// 	selector: '.tooltip',
-	// 	number: 1,
-	// 	content: 'Please provide your lastname.'
-	// });
-
-	// addAttributes({
-	// 	selector: '.tooltip',
-	// 	number: 2,
-	// 	content: 'Your home or work address.'
-	// });
 
 // Tooltip hover logic
 
