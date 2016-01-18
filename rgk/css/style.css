@@ -1,0 +1,195 @@
+/*Clearfix*/
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/*Main Styles*/
+*{
+	padding: 0;
+	margin: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+/*Navigation*/
+.main_nav-list_wrapper{
+	-webkit-box-shadow: 0px 8px 10px -8px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 8px 10px -8px rgba(0,0,0,0.2);
+	box-shadow: 0px 8px 10px -8px rgba(0,0,0,0.2);
+}
+.main_nav-item {
+	width: 33.3%;
+	float: left;
+	background-color: #fff;
+	line-height: 47px;
+	border-bottom: 1px solid #b5b5b5;
+	transition: line-height 0.5s;
+}
+.main_nav-item.mid_item--border {
+	box-sizing: border-box;
+	border-right: 1px solid #b5b5b5;
+	border-left: 1px solid #b5b5b5;
+}
+.main_nav-link {
+	display: inline-block;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px; /* Приближение из-за подстановки шрифтов */
+	color: #000;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	transition: font-size 0.5s;
+}
+.main_nav-link:hover {
+	background-color: #e3f1ff;
+}
+.main_nav-link:before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.main_nav-link.link--music:before {
+	background: url(../img/music_ico.png) no-repeat;
+	background-size: 20px auto;
+}
+.main_nav-link.link--video:before {
+	background: url(../img/video_ico.png) no-repeat;
+	background-size: 20px auto;
+}
+.main_nav-link.link--games:before {
+	background: url(../img/games_ico.png) no-repeat;
+	background-size: 20px auto;
+}
+
+
+/*Mobile attention block styles*/
+.container {
+	display: table;
+	height: calc(100% - 150px - 60px);
+	transition: padding 0.5s;
+	width: 100%;
+}
+.attention_wrapper {
+	padding: 9px;
+	display: table-cell;
+	width: 360px;
+	vertical-align: middle;
+}
+.mobile_attention {
+	margin: 0 auto;
+	min-width: 300px;
+	height: 270px;
+	border: 1px solid #c9c9c9;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: #fff;
+	padding-bottom: 27px;
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+	transition: height 0.5s;
+}
+.m_a-head {
+	font-family: 'Open Sans', sans-serif;
+	color: #000000;
+	font-size: 16px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	text-align: center;
+	line-height: 35px;
+	text-align: center;
+	border-bottom: 1px solid #c9c9c9;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(245,245,245,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5', GradientType=0 );
+	transition: line-height 0.5s font-size 0.5s;
+}
+.m_a-attention {
+	margin: 0 auto;
+	width: 300px;
+	transition: margin-top 0.5s width 0.5s;
+}
+.m_a-attention-text {
+	margin: 20px 30px 0;
+	background: url(../img/phones_ico.png) no-repeat;
+	background-size: 47px auto;
+	padding-left: 60px;
+	min-height: 47px;
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	color: #000000;
+	font-size: 14px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 600;
+	line-height: 22px; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+	transition: background-size 0.5s font-size 0.5s;
+}
+.m_a-enter_field {
+	margin: 15px 30px 0;
+	transition: margin-top 0.5s;
+}
+.m_a-enter_text {
+	margin-bottom: 5px;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-size: 20px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 600;
+	line-height: 21px; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+	transition: font-size 0.5s;
+}
+.m_a-enter_btn {
+	display: block;
+	margin: 0 auto;
+	width: 240px;
+	height: 80px;
+	border:none;
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+	font-size: 32px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	transition: margin-top 0.5s, width 0.5s, height 0.5s, font-size 0.5s;
+	background: rgba(82,42,201,1);
+	background: -moz-linear-gradient(top, rgba(82,42,201,1) 0%, rgba(54,22,157,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(82,42,201,1)), color-stop(100%, rgba(54,22,157,1)));
+	background: -webkit-linear-gradient(top, rgba(82,42,201,1) 0%, rgba(54,22,157,1) 100%);
+	background: -o-linear-gradient(top, rgba(82,42,201,1) 0%, rgba(54,22,157,1) 100%);
+	background: -ms-linear-gradient(top, rgba(82,42,201,1) 0%, rgba(54,22,157,1) 100%);
+	background: linear-gradient(to bottom, rgba(82,42,201,1) 0%, rgba(54,22,157,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#522ac9', endColorstr='#36169d', GradientType=0 );
+}
+
+/*footer*/
+footer {
+	position: absolute;
+	bottom: 0;
+}
+.footer_text {
+	font-family: Arial;
+	color: #959595;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 13px;
+	text-align: center;
+	margin-bottom: 10px;
+}

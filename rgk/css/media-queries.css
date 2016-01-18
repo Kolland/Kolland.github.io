@@ -1,0 +1,103 @@
+@media screen and (min-height: 568px){
+  .container {
+  	padding-top: 30px;
+  }
+  .mobile_attention {
+  	height: 330px;
+  }
+  .m_a-attention {
+  	margin-top: 35px;
+  }
+  .m_a-enter_field {
+  	margin-top: 35px;
+  }
+  .m_a-enter_btn {
+  	margin-top: 25px;
+  }
+}
+
+@media screen and (max-height: 479px) and (orientation:landscape){
+	.footer_text {
+		font-size: 8px;
+		line-height: 9px;
+		margin-bottom: 0;
+		padding: 0 10px;
+	}
+	.mobile_attention {
+		height: 190px;
+	}
+	.mobile_attention {
+		max-width: 360px;
+	}
+	.m_a-enter_btn {
+		width: 190px;
+		height: 42px;
+		font-size: 14px;
+		margin-top: 15px;
+	}
+	.m_a-enter_text {
+		font-size: 12px;
+	}
+	.m_a-attention {
+		width: 250px;
+	}
+	.m_a-attention-text {
+		font-size: 10px;
+		line-height: 16px;
+		text-align: left;
+		padding-top: 5px;
+	}
+}
+
+@media screen and (min-width: 720px) and (min-height: 480px){
+	.main_nav-item {
+		line-height: 75px;
+	}
+	.main_nav-link.link--music:before {
+		background-size: 30px auto;
+	}
+	.main_nav-link.link--video:before {
+		background-size: 30px auto;
+	}
+	.main_nav-link.link--games:before {
+		background-size: 30px auto;
+	}
+	.main_nav-link:before {
+		width: 30px;
+		height: 30px;
+	}
+	.main_nav-link {
+		font-size: 16px;
+	}
+	.mobile_attention {
+		max-width: 600px;
+		height: 400px;
+	}
+	.m_a-head {
+		font-size: 34px;
+		font-weight: 300;
+		line-height: 70px;
+	}
+	.m_a-attention {
+		width: 400px;
+	}
+	.m_a-attention-text {
+		font-size: 20px;
+		line-height: 20px;
+		text-align: left;
+		font-weight: 300;
+		background-size: 60px auto;
+		min-height: 60px;
+		padding-left: 80px;
+		padding-top: 5px;
+	}
+	.m_a-enter_text {
+		margin-bottom: 30px;
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.footer_text {
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
