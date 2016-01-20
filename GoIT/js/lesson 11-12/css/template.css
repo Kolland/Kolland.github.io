@@ -1,0 +1,28 @@
+body{
+	background-color: #eeeeee;
+}
+.pagestyle{
+	margin: 0 auto;
+	width: 650px;
+	height: 1000px;
+	background-color: white;
+	padding: 30px 50px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);;
+}
+.line {
+	border-bottom: 1px solid grey;
+}
+h1 {
+	text-align: center;
+}
+img {
+	padding-left: 30px;
+	width: 600px;
+	height:auto;
+}
+p, li, span{
+	font-size: 20px;
+}
+p {
+	margin-bottom: 2px;
+}

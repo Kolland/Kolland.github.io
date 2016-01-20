@@ -1,0 +1,64 @@
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.carousel-list {    
+    list-style: none;
+    width: 10000px;
+    padding: 0;
+    position: relative;
+}
+ 
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+    text-align: center;
+}
+ 
+.carousel-element img {
+    max-width: 100px;
+}
+.list-wrapper {
+	overflow: hidden;
+	width: 600px;
+	float: left;
+}
+
+.carousel-arrow-right,
+.carousel-arrow-left {
+	float: left;
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+	margin-top: 50px;
+	transform: scaleY(1.3);
+	opacity: 0.3;
+}
+.carousel-arrow-left img {
+
+}
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+ 
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+
+
+a {
+    text-align: center;
+    
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Templates HW</title>
+
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/profile_temp.js"></script>
+
+	<link rel="stylesheet" href="css/template.css">
+</head>
+<body>
+	<script type="text/html" id="profile_tmpl">
+		<div class="pagestyle">
+			<div class="line">
+				<h1><%= name %></h1>
+				<img src=<%= img %> alt="User image">
+				<p><%= prof %></p>
+			</div>
+			<div class="line">
+				<p>Хочу учить фронтенд, потому что:</p>
+				<ul>
+					<% for ( var i = 0; i < reasons.length; i++ ) { %>
+						<li><%= reasons[i].reason %></li>
+					<% } %>
+				</ul>
+			</div>
+			<div class="line">
+				<p>Мой контактный телефон</p>
+				<span><%= phoneNumber %></span>
+				<p>Мой профиль Вконтакте</p>
+				<span><a href="<%= vkProfile %>" target="blanck">VK</a></span>
+			</div>
+			<div>
+				<p>Мой фидбек:<br><%= feedback %></p>
+			</div>
+		</div>
+	</script>
+	
+</body>
+</html>
