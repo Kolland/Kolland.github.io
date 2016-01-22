@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS 3-4</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/template.js"></script>
+</head>
+<body>
+  <script type="text/html" id="test_tmpl">
+    <div class="col-md-12">
+      <h2 class="text-center bg-danger">Тест</h2>
+      <ul>
+        <% for ( var i = 0; i < data.questions.length; i++ ) { %>
+          <li>
+            <h3 class="text-center bg-primary"><%= data.questions[i]%></h3>
+            <ul>
+              <% for ( var j = 0; j < data.answers[i].length; j++ ) { %>
+                <li class="list-group-item">
+                  <label>
+                    <%= data.answers[i][j]%>
+                    <input class="pull-left" type="radio" name="<%= 'Q' + i%>">
+                  </label></li>
+              <% } %>
+            </ul>
+          </li>
+        <% } %>
+      </ul>
+      <input class="btn btn-lg btn-success center-block" type="submit" value="Проверить мои результаты"></input>
+    </div>
+  </script>
+</body>
+</html>
