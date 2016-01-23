@@ -30,38 +30,64 @@ $(function () {
   $('body').append(ans);
 
   // Results modal 
-
-  var showResults = function () {
-
-    $('.modal_wrap').show()
-    // $('.modal_results').addClass('modal_results--active')
-
-    // Right answers array
-    var rightAnswers = [
-      $( "label:contains('Война...') > input" ).prop("checked"),
-      $( "label:contains('Пройти в Мордор') > input" ).prop("checked"),
-      $( "label:contains('Internet Explorer') > input" ).prop("checked")
-    ]
+  var resultsWindow = {
     
-    //Right answers check
-    for (var i = 0; i < test.questions.length; i++) {
-      if ( rightAnswers[i] ) {
-        $('.modal_results').append( '<h2 class="text-center">' + (i+1) + '. Правильно!</h2>');
-      } else {
-        $('.modal_results').append( '<h2 class="text-center">' + (i+1) + '. Не правильно!</h2>');
-      }
-    };
-  }
+    show: function () {
+      //modal window open animation
+      $('.modal_wrap').fadeIn(200);
 
-  var hideResults = function () {
-    $('.modal_wrap').hide();
-    $('.modal_results').click(function( event ) {
-      event.stopPropagation();
-    });
-    $('.modal_wrap h2').remove();
-  }
+      $( '.modal_results' ).animate({
+          top: 0,
+        }, 100);
 
-  $('.btn').on('click', showResults);
-  $('.modal_wrap, .modal_exit_btn').on('click', hideResults);
+      // Right answers array
+      var rightAnswers = [
+        $( "label:contains('Война...') > input" ).prop("checked"),
+        $( "label:contains('Пройти в Мордор') > input" ).prop("checked"),
+        $( "label:contains('Internet Explorer') > input" ).prop("checked")
+      ]
+      
+      //Right answers check
+      for (var i = 0; i < test.questions.length; i++) {
+
+        if ( rightAnswers[i] ) {
+
+          $( '<h2>' + (i+1) + '. Правильно!</h2>')
+            .appendTo('.modal_results')
+            .addClass("correct_answer");
+
+        } else {
+
+          $( '<h2>' + (i+1) + '. Не правильно!</h2>')
+            .appendTo('.modal_results')
+            .addClass("incorrect_answer");
+
+        }
+      };
+    },
+
+    hide: function () {
+      //modal window close animation
+      $('.modal_wrap').fadeOut(500);
+
+      $( '.modal_results' ).animate({
+        top: -500,
+      }, 100, function(){
+
+        $('.modal_wrap h2').remove();
+
+      });
+      
+      $('.modal_results').click(function( event ) {
+        event.stopPropagation();
+      })
+
+      //Reset radio
+      $('input:radio').removeAttr('checked');
+    }
+  };
+
+  $('.btn').on('click', resultsWindow.show);
+  $('.modal_wrap, .modal_exit_btn').on('click', resultsWindow.hide);
 });
 
