@@ -6,12 +6,13 @@
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
   
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/template.js"></script>
 </head>
-<body>
+<body class="container">
   <script type="text/html" id="test_tmpl">
     <div class="col-md-12">
       <h2 class="text-center bg-danger">Тест</h2>
@@ -19,7 +20,7 @@
         <% for ( var i = 0; i < data.questions.length; i++ ) { %>
           <li>
             <h3 class="text-center bg-primary"><%= data.questions[i]%></h3>
-            <ul>
+            <ul >
               <% for ( var j = 0; j < data.answers[i].length; j++ ) { %>
                 <li class="list-group-item">
                   <label>
@@ -34,5 +35,10 @@
       <input class="btn btn-lg btn-success center-block" type="submit" value="Проверить мои результаты"></input>
     </div>
   </script>
+  <div class="modal_wrap">
+    <div class="modal_results">
+      <button class="modal_exit_btn"><img src="img/cross97.svg" alt=""></button>
+    </div>
+  </div>
 </body>
 </html>

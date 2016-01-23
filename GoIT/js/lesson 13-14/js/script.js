@@ -1,120 +1,67 @@
 'use strict';
 
 $(function () {
-  
-  // template
-  var html = $('#test_tmpl').html();
 
+  //Questions and answers
   var test = {
     questions: [
-      'Что никогда не меняется?',
-      'Нельзя просто так взять и ...',
-      'Что из этого НЕ является Веб-браузером'
+      '1.Что никогда не меняется?',
+      '2.Нельзя просто так взять и ...',
+      '3.Что из этого НЕ является Веб-браузером'
     ],
     answers: [
       ['Геймплей Assassins Creed', 'Война...', 'Игроки Call of Duty'],
       ['Пройти в Мордор', 'Просто так взять', 'Можно'],
-      ['Firefox', 'Chrome', 'Internet Explorer']
+      ['Firefox', 'Chrome', 'Internet Explorer', 'Opera']
     ]
   }
 
+  // Set and get from localStorage  
   localStorage.setItem( 'test', JSON.stringify( test ) );
   var testJSON = JSON.parse( localStorage.getItem( 'test' ) );
+
+  // Paste Q&A in template
+  var html = $('#test_tmpl').html();
 
   var ans = tmpl(html, {
     data:testJSON
   });
 
   $('body').append(ans);
+
+  // Results modal 
+
+  var showResults = function () {
+
+    $('.modal_wrap').show()
+    // $('.modal_results').addClass('modal_results--active')
+
+    // Right answers array
+    var rightAnswers = [
+      $( "label:contains('Война...') > input" ).prop("checked"),
+      $( "label:contains('Пройти в Мордор') > input" ).prop("checked"),
+      $( "label:contains('Internet Explorer') > input" ).prop("checked")
+    ]
+    
+    //Right answers check
+    for (var i = 0; i < test.questions.length; i++) {
+      if ( rightAnswers[i] ) {
+        $('.modal_results').append( '<h2 class="text-center">' + (i+1) + '. Правильно!</h2>');
+      } else {
+        $('.modal_results').append( '<h2 class="text-center">' + (i+1) + '. Не правильно!</h2>');
+      }
+    };
+  }
+
+  var hideResults = function () {
+    $('.modal_wrap').hide();
+    $('.modal_results').click(function( event ) {
+      event.stopPropagation();
+    });
+    $('.modal_wrap h2').remove();
+  }
+
+  $('.btn').on('click', showResults);
+  $('.modal_wrap, .modal_exit_btn').on('click', hideResults);
 });
-
-// var app = {
-
-//  createElement: function (tagParams) {
-//    var element = document.createElement(tagParams.tag);
-//    element.className = tagParams.tagClass;
-//    element.innerHTML = tagParams.content;
-
-//    if (tagParams.tag === 'input' || tagParams.tag === 'button') {
-//      element.setAttribute('type', tagParams.inputType);
-      
-//      if (tagParams.inputType === 'submit' && tagParams.tag === 'input') {
-//        element.setAttribute('value', tagParams.inputValue);
-//      };
-//    };
-
-//    tagParams.parrent.appendChild(element);
-
-//    return element;
-//  },
-
-//  generateQuestions: function(questionsAmount, answersAmount) {
-//    for (var i = 0; i < questionsAmount; i++) {
-//      this.createElement ({
-//        tag: 'h3',
-//        tagClass: 'text-center bg-primary',
-//        content: 'Вопрос №' + (i +1),
-//        parrent: centerDiv
-//      });
-
-//      var ul = this.createElement ({
-//          tag: 'ul',
-//          tagClass: 'center-block',
-//          content: '',
-//          parrent: centerDiv
-//      })
-
-//      for (var j = 0; j < answersAmount; j++) {
-//        var li = this.createElement ({
-//          tag: 'li',
-//          tagClass: 'list-group-item',
-//          content: '',
-//          parrent: ul
-//        })
-//        var label = this.createElement ({
-//          tag: 'label',
-//          content: 'Вариант ответа №' + (j +1),
-//          parrent: li
-//        })
-//        this.createElement ({
-//          tag: 'input',
-//          tagClass: 'pull-left',
-//          inputType: 'checkbox',
-//          content: '',
-//          parrent: label
-//        })
-//      };
-//    };
-//  }
-// };
-
-
-// document.body.className = 'container';
-// var body = document.body;
-
-// //generate div bootsrap columns
-
-// var centerDiv = app.createElement({
-//  tag: 'div',
-//  tagClass: 'col-md-12',
-//  content: '',
-//  parrent: body
-//  });
-
-// app.createElement({
-//  tag: 'h2',
-//  tagClass: 'text-center bg-danger',
-//  content: 'Тест по программированию',
-//  parrent: centerDiv
-//  })
-
-// app.generateQuestions(3, 3);
-
-// app.createElement({
-//  tag: 'input',
-//  inputType: 'submit',
-//  tagClass: 'btn btn-lg btn-success center-block',
-//  inputValue: 'Проверить мои результаты',
-//  parrent: centerDiv
-//  })
 
