@@ -180,10 +180,6 @@ a {
 }
 
 /*footer*/
-footer {
-	position: absolute;
-	bottom: 0;
-}
 .footer_text {
 	font-family: Arial;
 	color: #959595;

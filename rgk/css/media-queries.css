@@ -1,3 +1,16 @@
+@media screen and (max-width: 320px){
+	.site {
+		width: 320px;
+	}
+	.footer_text {
+		width: 320px;
+	}
+}
+@media screen and (max-height: 320px){
+	.site {
+		height: 320px;
+	}
+}
 @media screen and (min-height: 568px){
   .container {
   	padding-top: 30px;
