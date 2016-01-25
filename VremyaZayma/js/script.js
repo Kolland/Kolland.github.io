@@ -2,18 +2,17 @@ $(document).ready(function(){
 
 	$('.callback_btn').on('click', function(){
 		$('.callback_close').show(200);
-		$('.callback_submit').show(200);
+		$('.callback_form').addClass('callback_form-active')
 		$(this).addClass('callback_btn-active');
 		$('.callback_icon').addClass('callback_icon-rotate');
-		$('.callback_text').delay(300).show();
 	});
 
 	function callbackClose () {
 		$('.callback_close').hide(200);
-		$('.callback_submit').hide(200);
+		$('.callback_form').removeClass('callback_form-active')
 		$('.callback_btn').removeClass('callback_btn-active')
 		$('.callback_icon').removeClass('callback_icon-rotate');
-		$('.callback_text').hide(200);
+		
 	};
 
 	$(document).click(function(event) {
