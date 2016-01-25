@@ -6,12 +6,19 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/script.js"></script>
 </head>
 <body>
 	<div class="callback_btn">
+		<div class="callback_close"></div>
 		<img class="callback_icon"src="img/callback_phone.png" alt="callback_phone">
 		<span class='callback_text'>Введите свой номер и мы перезвоним Вам!</span>
+		<form action="http://formspree.io/koland.my@gmail.com"
+      method="POST"class="clearfix callback_form">
+			<input type="text" placeholder="Введите номер телефона" class="callback_phone_number">
+			<input type="submit" class="callback_submit">
+		</form>
 		
 	</div>
 </body>
