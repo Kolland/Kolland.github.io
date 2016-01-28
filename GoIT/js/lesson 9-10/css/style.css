@@ -15,10 +15,25 @@ body {
 	display: inline-block;
 	cursor: pointer;
 	background: url(../img/checkbox-sprite.png);
+	overflow: hidden;
+}
+.niceChecked {
+	background-position: 0 -17px;
 }
 .niceCheck input {
-	display: none;
+	margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
 }
+.niceCheckDisabled {
+	background-image: url(../img/checkbox-disabled.png);
+}
+div > label {
+	cursor: pointer;
+}
+.cuselItem > label {
+	cursor: pointer;
+	
+}
+
 
 /*checkbox css*/
 .css_chk {
