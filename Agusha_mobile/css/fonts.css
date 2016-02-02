@@ -1,0 +1,34 @@
+/* PTSans */
+@font-face {
+    font-family: 'PT_Sans_Narrow_Bold';
+    src: url('../fonts/pt_sans_narrow_bold.eot');
+    src: url('../fonts/pt_sans_narrow_bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt_sans_narrow_bold.woff') format('woff'),
+         url('../fonts/pt_sans_narrow_bold.ttf') format('truetype'),
+         url('../fonts/pt_sans_narrow_bold.svg#pt_sans_narrow_bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT_Sans_Bold';
+    src: url('../fonts/pt_sans_bold.eot');
+    src: url('../fonts/pt_sans_bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt_sans_bold.woff') format('woff'),
+         url('../fonts/pt_sans_bold.ttf') format('truetype'),
+         url('../fonts/pt_sans_bold.svg#pt_sans_bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT_Sans_Regular';
+    src: url('../fonts/pt_sans.eot');
+    src: url('../fonts/pt_sans.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt_sans.woff') format('woff'),
+         url('../fonts/pt_sans.ttf') format('truetype'),
+         url('../fonts/pt_sans.svg#pt_sans') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
