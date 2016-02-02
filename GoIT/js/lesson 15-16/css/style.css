@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+a {
+	display: block;
+
+	text-decoration: none;
+	font-size: 18px;
+	color: #1a0dab;
+}
+a:hover {
+	text-decoration: underline;
+	
+}
+a:visited {
+	color: #609;
+}
+input {
+	font-size: 16px;
+    line-height: 26px;
+    height: 26px;
+}
+button {
+	font-size: 16px;
+    line-height: 26px;
+    height: 29px;
+    padding: 0 10px;
+}
+.container {
+	margin: 0 auto;
+	width: 640px;
+}
+.search_wrapper {
+	margin: 23px 0;
+
+	text-align: center;
+}
+
+.result_content {
+	margin-bottom: 23px;
+
+	color: #545454;
+	line-height: 1.4;
+	font-size: small;
+}
+.result_url {
+	font-size: 14px;
+	color: #006621;
+    font-style: normal;
+}
+.no_results {
+	text-align: center;
+	font-size: 18px;
+	color: #545454;
+    font-style: normal;
+}
