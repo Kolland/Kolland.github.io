@@ -116,6 +116,8 @@ $(document).ready(function() {
  	    zoom: 16,
  	    center: myLatLng,
  	    zoomControl: true,
+      draggable: false,
+      scrollwheel: false
  	  });
 
  	  var marker = new google.maps.Marker({
