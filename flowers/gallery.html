@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Салон цветов</title>
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta id="myViewport" charset="utf-8" http-equiv="Content-Type"  name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 
 	
 	<link rel="stylesheet" href="css/normalize.css">
@@ -21,6 +21,29 @@
 				openEffect	: 'elastic',
 				closeEffect	: 'elastic',
 			});
+			//viewport setting
+			setViewport();
+			window.onload = function () {
+			 setViewport();
+			};
+			window.onresize = function(event) {
+			 setViewport();
+			};
+			function setViewport(){
+			 var mvp;
+			 if(screen.width <= 859) {
+			  mvp = document.getElementById('myViewport');
+			  mvp.setAttribute('content', 'width=320, user-scalable=no');
+			 }else{
+			  if(screen.width <= 1024) {
+			   mvp = document.getElementById('myViewport');
+			   mvp.setAttribute('content', 'width=1024, user-scalable=no');
+			  }else{
+			   mvp = document.getElementById('myViewport');
+			   mvp.setAttribute('content', 'width=device-width, user-scalable=no, initial-scale=1');
+			  }
+			 }
+			}
 
 		});
 

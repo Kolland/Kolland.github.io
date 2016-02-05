@@ -1,6 +1,27 @@
-
-
 $(document).ready(function() {
+  //viewport setting
+  setViewport();
+  window.onload = function () {
+   setViewport();
+  };
+  window.onresize = function(event) {
+   setViewport();
+  };
+  function setViewport(){
+   var mvp;
+   if(screen.width <= 859) {
+    mvp = document.getElementById('myViewport');
+    mvp.setAttribute('content', 'width=320, user-scalable=no');
+   }else{
+    if(screen.width <= 1024) {
+     mvp = document.getElementById('myViewport');
+     mvp.setAttribute('content', 'width=1024, user-scalable=no');
+    }else{
+     mvp = document.getElementById('myViewport');
+     mvp.setAttribute('content', 'width=device-width, user-scalable=no, initial-scale=1');
+    }
+   }
+  }
 	var owl = $(".owl-carousel");
  
   owl.owlCarousel({
