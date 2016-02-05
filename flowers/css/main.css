@@ -1,0 +1,846 @@
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+body {
+	background: #ebe7e0 url('../img/main_bg.jpg') 0 0;
+}
+/*Loader*/
+.loader {
+  background: none repeat scroll 0 0 #e6d6c1;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #e6d6c1;
+  height: 64px;
+  width: 64px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.main_wrapper {
+	width: 300px;
+	margin: 0 auto;
+	padding-top: 8px;
+}
+.pres_page {
+	width: 300px;
+	height: 465px;
+	margin: 0 auto;
+	background: #ebe7e0 url('../img/320/page_bg_320.jpg') 0 0 no-repeat;
+	background-size: 100% auto;
+	padding-top: 15px;
+}
+.pres_page-logo {
+	width: 240px;
+	height: 100px;
+	margin: 0 auto;
+	background: transparent url('../img/320/logo_320.png') 0 0 no-repeat;
+	background-size: 100% auto;
+}
+.main_phones {
+	display: none;
+}
+.pres_page-services {
+	width: 136px;
+	height: 141px;
+	float: left;
+	margin-left: 20px;
+	margin-right: -20px;
+	background: transparent url('../img/320/services_320.png') 0 0 no-repeat;
+	background-size: 100% auto;
+}
+.pres_page-flower {
+	width: 162px;
+	height: 112px;
+	float: right;
+	margin-top: -18px;
+	background: transparent url('../img/320/flower_320.png') 0 0 no-repeat;
+	background-size: 100% auto;
+}
+.gallery_text_link {
+	display: none;
+}
+
+.pres_page-baner {
+	width: 256px;
+	height: 40px;
+	margin: 0 auto;
+	clear: both;
+	background: transparent url('../img/320/25_roses_baner_320.png') 0 0 no-repeat;
+	background-size: 100% auto;
+}
+
+/*Carousel addition styles*/
+.carousel_wrapper {
+	position: relative;
+}
+.gallery_link {
+	display: block;
+}
+.owl-carousel-wrapper {
+	width: 215px;
+	height: 140px;
+	margin: 0 auto;
+	border: 3px #faf2e7 solid;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.owl-carousel-wrapper img {
+	width: 100%;
+}
+.owl-carousel-nav {
+	width: 17px;
+	height: 28px;
+	position: absolute;
+	top: 60px;
+	cursor: pointer;
+}
+.owl-carousel-nav.right {
+	right: 13px;
+	background: transparent url('../img/320/carousel_arrows_320.png') -22px 0 no-repeat;
+}
+.owl-carousel-nav.left {
+	left: 13px;
+	background: transparent url('../img/320/carousel_arrows_320.png') 0 0 no-repeat;
+}
+
+/*Find_us page*/
+.find_us_page {
+	width: 300px;
+	height: 625px;
+	margin: 0 auto;
+	background: #ebe7e0 url('../img/320/map_bg_320.jpg') 0 0 no-repeat;
+	background-size: 100% auto;
+	padding-top: 25px;
+}
+.how_find_text {
+	width: 102px;
+	height: 16px;
+	margin: 0 auto 10px;
+	background: transparent url('../img/320/how_find_text_320.png') 0 0 no-repeat;
+	background-size: 100% auto;
+}
+.text_block_wrapper {
+	width: auto;
+}
+.adress {
+	width: 140px;
+	float: left;
+	margin-left: 8px;
+}
+.phones {
+	float: right;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+.info_text {
+	margin: 0;
+	font-family: "Rubik", Arial, Helvetica, sans-serif;
+	color: #9a2728;
+	font-size: 12px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 700;
+	font-style: italic;
+	line-height: 16px; /* Приближение из-за подстановки шрифтов */
+	text-align: right;
+	text-shadow: 0px 0px 7px rgba(255, 255, 255, 1);
+}
+.regimen {
+	clear: both;
+}
+.regimen_text {
+	margin: 0;
+	font-family: "Rubik", Arial, Helvetica, sans-serif;
+	color: #9a2728;
+	font-size: 11px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	font-style: italic;
+	line-height: 16px; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+	text-shadow: 0px 0px 7px rgba(255, 255, 255, 1);
+}
+.map {
+	width: 275px;
+	height: 120px;
+	border: 3px #faf2e7 solid;
+	border-radius: 5px;
+	margin: 0 auto 15px;
+}
+
+@media screen and (min-width: 1024px) {
+	.main_wrapper {
+		width: 975px;
+		padding-top: 15px;
+	}
+	.pres_page {
+		width: 975px;
+		height: 695px;
+		background: #ebe7e0 url('../img/1024_1366/page_bg_1366.jpg') 0 0 no-repeat;
+		background-size: 100% 100%;
+		padding-top: 10px;
+	}
+	.pres_page-logo {
+		float: left;
+		width: 500px;
+		height: 190px;
+		margin-left: 50px;
+		background: transparent url('../img/1024_1366/logo_1366.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.main_phones {
+		display: block;
+		margin: 30px 50px 0 0;
+	}
+	.main_phones_text {
+		margin: 0;
+		font-family: "Rubik", Arial, Helvetica, sans-serif;
+		color: #b44549;
+		font-size: 21px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 700;
+		font-style: italic;
+		line-height: 24px; /* Приближение из-за подстановки шрифтов */
+		text-align: right;
+		text-shadow: 0px 0px 7px rgba(255, 255, 255, 1);
+	}
+	.pres_page-services {
+		width: 225px;
+		height: 235px;
+		clear: both;
+		margin-left: 60px;
+		margin-right: 0;
+		background: transparent url('../img/1024_1366/services_1366.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.pres_page-flower {
+		width: 525px;
+		height: 360px;
+		margin-top: -100px;
+		margin-right: 25px;
+		background: transparent url('../img/1024_1366/flower_1366.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.gallery_text_link {
+		display: block;
+		float: left;
+		margin-left: 100px;
+		margin-top: -10px;
+		font-family: "Rubik", Arial, Helvetica, sans-serif;
+		color: #645540;
+		font-size: 22px; /* Приближение из-за подстановки шрифтов */
+		font-style: italic;
+		text-decoration: underline;
+	}
+	.gallery_text_link:hover {
+		text-decoration: none;
+	}
+	.pres_page-baner {
+		width: 370px;
+		height: 55px;
+		float: right;
+		margin: -45px 50px 10px 0;
+		clear: both;
+		background: transparent url('../img/1024_1366/25_roses_baner_1366.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+
+	/*Carousel addition styles*/
+	.carousel_wrapper {
+		position: relative;
+		clear: both;
+	}
+	.gallery_link {
+		display: block;
+		width: 880px;
+		margin: 0 auto;
+	}
+	.owl-carousel {
+	}
+	.owl-carousel-wrapper {
+		width: 270px;
+		height: 180px;
+		margin: 0 auto;
+		border: 3px #faf2e7 solid;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+	.owl-carousel-wrapper img {
+		width: 100%;
+	}
+	.owl-carousel-nav {
+		width: 26px;
+		height: 43px;
+		position: absolute;
+		top: 72px;
+	}
+	.owl-carousel-nav.right {
+		right: 22px;
+		background: transparent url('../img/1024_1366/carousel_arrows_1366.png') -42px 0 no-repeat;
+	}
+	.owl-carousel-nav.left {
+		left: 22px;
+		background: transparent url('../img/1024_1366/carousel_arrows_1366.png') 0 0 no-repeat;
+	}
+
+	/*Find_us page*/
+	.find_us_page {
+		width: 860px;
+		height: 915px;
+		margin: 30px auto 0;
+		background: #ebe7e0 url('../img/1024_1366/map_bg_1366.jpg') 0 0 no-repeat;
+		background-size: 100% 100%;
+		padding: 45px 40px 0 75px;
+	}
+	.how_find_text {
+		width: 230px;
+		height: 40px;
+		margin: 0 auto 10px;
+		background: transparent url('../img/1024_1366/how_find_text_1366.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.text_block_wrapper {
+		float: right;
+		width: 300px;
+	}
+	.adress {
+		width: 250px;
+		float: right;
+		margin: 20px 0 0 0;
+	}
+	.phones {
+		float: right;
+		margin-top: 20px;
+		margin-right: 0;
+	}
+	.info_text {
+		margin: 0;
+		font-family: "Rubik", Arial, Helvetica, sans-serif;
+		color: #9a2728;
+		font-size: 27px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		font-style: italic;
+		line-height: 32px;
+		text-align: right;
+		text-shadow: 0px 0px 7px rgba(255, 255, 255, 1);
+	}
+	.regimen {
+		clear:none;
+		float: right;
+		margin-top: 40px;
+	}
+	.regimen_text {
+		margin: 0;
+		font-family: "Rubik", Arial, Helvetica, sans-serif;
+		color: #9a2728;
+		font-size: 19px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		font-style: italic;
+		line-height: 16px; /* Приближение из-за подстановки шрифтов */
+		text-align: center;
+		text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	}
+	.map {
+		width: 550px;
+		height: 240px;
+		border: 3px #faf2e7 solid;
+		border-radius: 5px;
+		float: left;
+	}
+}
+@media screen and (min-width: 1366px) {
+	.main_wrapper {
+		padding-top: 15px;
+		width: 1075px;
+	}
+	.pres_page {
+		width: 1075px;
+		height: 735px;
+		background: #ebe7e0 url('../img/1024_1366/page_bg_1366.jpg') 0 0 no-repeat;
+		background-size: 100% 100%;
+		padding-top: 15px;
+	}
+	.pres_page-logo {
+		float: left;
+		width: 550px;
+		height: 200px;
+		margin-left: 50px;
+		background: transparent url('../img/1024_1366/logo_1366.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.main_phones {
+		display: block;
+		margin: 30px 60px 0 0;
+	}
+	.main_phones_text {
+		margin: 0;
+		font-size: 24px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 700;
+		line-height: 28px; /* Приближение из-за подстановки шрифтов */
+		text-align: right;
+		text-shadow: 0px 0px 7px rgba(255, 255, 255, 1);
+	}
+	.pres_page-services {
+		width: 265px;
+		height: 265px;
+		clear: both;
+		margin: 10px 0 0 60px;
+		background: transparent url('../img/1024_1366/services_1366.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.pres_page-flower {
+		width: 570px;
+		height: 400px;
+		margin-top: -90px;
+		margin-right: 40px;
+		background: transparent url('../img/1024_1366/flower_1366.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.gallery_text_link {
+		display: block;
+		float: left;
+		margin-left: 120px;
+		margin-top: -10px;
+		font-size: 23px; /* Приближение из-за подстановки шрифтов */
+	}
+	.pres_page-baner {
+		width: 390px;
+		height: 60px;
+		float: right;
+		margin: -58px 75px 10px 0;
+		clear: both;
+		background: transparent url('../img/1024_1366/25_roses_baner_1366.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+
+	/*Carousel addition styles*/
+	.carousel_wrapper {
+		position: relative;
+		clear: both;
+	}
+	.gallery_link {
+		display: block;
+		width: 930px; /*carousel width*/
+		margin: 0 auto;
+	}
+	.owl-carousel {
+	}
+	.owl-carousel-wrapper {
+		width: 290px;
+		height: 186px;
+	}
+	.owl-carousel-nav {
+		width: 26px;
+		height: 43px;
+		position: absolute;
+		top: 80px;
+	}
+	.owl-carousel-nav.right {
+		right: 30px;
+		background: transparent url('../img/1024_1366/carousel_arrows_1366.png') -42px 0 no-repeat;
+	}
+	.owl-carousel-nav.left {
+		left: 30px;
+		background: transparent url('../img/1024_1366/carousel_arrows_1366.png') 0 0 no-repeat;
+	}
+
+	/*Find_us page*/
+	.find_us_page {
+		width: 930px;
+		height: 915px;
+		margin: 30px auto 0;
+		background: #ebe7e0 url('../img/1024_1366/map_bg_1366.jpg') 0 0 no-repeat;
+		background-size: 100% 100%;
+		padding: 45px 60px 0 85px;
+	}
+	.how_find_text {
+		width: 260px;
+		height: 50px;
+		background: transparent url('../img/1024_1366/how_find_text_1366.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.text_block_wrapper {
+		float: right;
+		width: 330px;
+	}
+	.adress {
+		width: 300px;
+		float: right;
+		margin: 20px 0 0 0;
+	}
+	.phones {
+		float: right;
+		margin-top: 20px;
+		margin-right: 0;
+	}
+	.info_text {
+		margin: 0;
+		font-family: "Rubik", Arial, Helvetica, sans-serif;
+		color: #9a2728;
+		font-size: 30px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		font-style: italic;
+		line-height: 32px;
+		text-align: right;
+		text-shadow: 0px 0px 7px rgba(255, 255, 255, 1);
+	}
+	.regimen {
+		clear:none;
+		float: right;
+		margin-top: 40px;
+	}
+	.regimen_text {
+		margin: 0;
+		font-family: "Rubik", Arial, Helvetica, sans-serif;
+		color: #9a2728;
+		font-size: 22px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		font-style: italic;
+		line-height: 16px; /* Приближение из-за подстановки шрифтов */
+		text-align: center;
+		text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	}
+	.map {
+		width: 580px;
+		height: 255px;
+		border: 3px #faf2e7 solid;
+		border-radius: 5px;
+		float: left;
+		
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.main_wrapper {
+		padding-top: 15px;
+		width: 1515px;
+	}
+	.pres_page {
+		width: 1515px;
+		height: 1030px;
+		background: #ebe7e0 url('../img/1920_2560/page_bg_2560.jpg') 0 0 no-repeat;
+		background-size: 100% 100%;
+		padding-top: 15px;
+	}
+	.pres_page-logo {
+		width: 750px;
+		height: 275px;
+		margin-left: 80px;
+		background: transparent url('../img/1920_2560/logo_2560.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.main_phones {
+		display: block;
+		margin: 55px 85px 0 0;
+	}
+	.main_phones_text {
+		margin: 0;
+		font-size: 34px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 700;
+		line-height: 40px; /* Приближение из-за подстановки шрифтов */
+		text-align: right;
+		text-shadow: 0px 0px 7px rgba(255, 255, 255, 1);
+	}
+	.pres_page-services {
+		width: 370px;
+		height: 350px;
+		clear: both;
+		margin: 10px 0 0 85px;
+		background: transparent url('../img/1920_2560/services_2560.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.pres_page-flower {
+		width: 800px;
+		height: 570px;
+		margin-top: -125px;
+		margin-right: 80px;
+		background: transparent url('../img/1920_2560/flower_2560.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.gallery_text_link {
+		display: block;
+		float: left;
+		margin-left: 160px;
+		margin-top: 10px;
+		font-size: 32px; /* Приближение из-за подстановки шрифтов */
+	}
+	.pres_page-baner {
+		width: 550px;
+		height: 80px;
+		float: right;
+		margin: -88px 130px 10px 0;
+		clear: both;
+		background: transparent url('../img/1920_2560/25_roses_baner_2560.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+
+	/*Carousel addition styles*/
+	.carousel_wrapper {
+		position: relative;
+		clear: both;
+	}
+	.gallery_link {
+		display: block;
+		width: 1300px; /*carousel width*/
+		margin: 0 auto;
+	}
+	.owl-carousel {
+	}
+	.owl-carousel-wrapper {
+		width: 410px;
+		height: 265px;
+	}
+	.owl-carousel-nav {
+		width: 50px;
+		height: 80px;
+		position: absolute;
+		top: 90px;
+	}
+	.owl-carousel-nav.right {
+		right: 42px;
+		background: transparent url('../img/1920_2560/carousel_arrows_2560.png') -85px 0 no-repeat;
+	}
+	.owl-carousel-nav.left {
+		left: 42px;
+		background: transparent url('../img/1920_2560/carousel_arrows_2560.png') 0 0 no-repeat;
+	}
+
+	/*Find_us page*/
+	.find_us_page {
+		width: 1310px;
+		height: 1365px;
+		margin: 30px auto 0;
+		background: #ebe7e0 url('../img/1920_2560/map_bg_2560.jpg') 0 0 no-repeat;
+		background-size: 100% 100%;
+		padding: 65px 85px 0 120px;
+	}
+	.how_find_text {
+		width: 355px;
+		height: 70px;
+		background: transparent url('../img/1920_2560/how_find_text_2560.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.text_block_wrapper {
+		float: right;
+		width: 445px;
+	}
+	.adress {
+		width: 425px;
+		float: right;
+		margin: 20px 0 0 0;
+	}
+	.phones {
+		float: right;
+		margin-top: 20px;
+		margin-right: 0;
+	}
+	.info_text {
+		margin: 0;
+		font-family: "Rubik", Arial, Helvetica, sans-serif;
+		color: #9a2728;
+		font-size: 42px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		font-style: italic;
+		line-height: 48px;
+		text-align: right;
+		text-shadow: 0px 0px 7px rgba(255, 255, 255, 1);
+	}
+	.regimen {
+		clear:none;
+		float: right;
+		margin-top: 60px;
+	}
+	.regimen_text {
+		margin: 0;
+		font-family: "Rubik", Arial, Helvetica, sans-serif;
+		color: #9a2728;
+		font-size: 30px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		font-style: italic;
+		line-height: 34px; /* Приближение из-за подстановки шрифтов */
+		text-align: center;
+		text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	}
+	.map {
+		width: 850px;
+		height: 380px;
+		border: 3px #faf2e7 solid;
+		border-radius: 5px;
+		float: left;
+		
+	}
+}
+
+@media screen and (min-width: 2560px) {
+	.main_wrapper {
+		padding-top: 15px;
+		width: 2015px;
+	}
+	.pres_page {
+		width: 2015px;
+		height: 1385px;
+		background: #ebe7e0 url('../img/1920_2560/page_bg_2560.jpg') 0 0 no-repeat;
+		background-size: 100% 100%;
+		padding-top: 15px;
+	}
+	.pres_page-logo {
+		width: 1020px;
+		height: 380px;
+		margin-left: 120px;
+		background: transparent url('../img/1920_2560/logo_2560.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.main_phones {
+		display: block;
+		margin: 75px 115px 0 0;
+	}
+	.main_phones_text {
+		margin: 0;
+		font-size: 45px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 700;
+		line-height: 50px; /* Приближение из-за подстановки шрифтов */
+		text-align: right;
+		text-shadow: 0px 0px 7px rgba(255, 255, 255, 1);
+	}
+	.pres_page-services {
+		width: 500px;
+		height: 500px;
+		clear: both;
+		margin: 10px 0 0 110px;
+		background: transparent url('../img/1920_2560/services_2560.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.pres_page-flower {
+		width: 1060px;
+		height: 750px;
+		margin-top: -185px;
+		margin-right: 100px;
+		background: transparent url('../img/1920_2560/flower_2560.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.gallery_text_link {
+		display: block;
+		float: left;
+		margin-left: 215px;
+		margin-top: 0;
+		font-size: 43px; /* Приближение из-за подстановки шрифтов */
+	}
+	.pres_page-baner {
+		width: 735px;
+		height: 115px;
+		float: right;
+		margin: -113px 156px 10px 0;
+		clear: both;
+		background: transparent url('../img/1920_2560/25_roses_baner_2560.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+
+	/*Carousel addition styles*/
+	.carousel_wrapper {
+		position: relative;
+		clear: both;
+	}
+	.gallery_link {
+		display: block;
+		width: 1750px; /*carousel width*/
+		margin: 0 auto;
+	}
+	.owl-carousel {
+	}
+	.owl-carousel-wrapper {
+		width: 550px;
+		height: 350px;
+	}
+	.owl-carousel-nav {
+		width: 60px;
+		height: 90px;
+		position: absolute;
+		top: 140px;
+	}
+	.owl-carousel-nav.right {
+		right: 60px;
+		background: transparent url('../img/1920_2560/carousel_arrows_2560.png') -85px 0 no-repeat;
+	}
+	.owl-carousel-nav.left {
+		left: 60px;
+		background: transparent url('../img/1920_2560/carousel_arrows_2560.png') 0 0 no-repeat;
+	}
+
+	/*Find_us page*/
+	.find_us_page {
+		width: 1740px;
+		height: 1785px;
+		margin: 30px auto 0;
+		background: #ebe7e0 url('../img/1920_2560/map_bg_2560.jpg') 0 0 no-repeat;
+		background-size: 100% 100%;
+		padding: 80px 115px 0 160px;
+	}
+	.how_find_text {
+		width: 470px;
+		height: 100px;
+		background: transparent url('../img/1920_2560/how_find_text_2560.png') 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	.text_block_wrapper {
+		float: right;
+		width: 600px;
+	}
+	.adress {
+		width: 550px;
+		float: right;
+		margin: 20px 0 0 0;
+	}
+	.phones {
+		float: right;
+		margin-top: 40px;
+		margin-right: 0;
+	}
+	.info_text {
+		margin: 0;
+		font-family: "Rubik", Arial, Helvetica, sans-serif;
+		color: #9a2728;
+		font-size: 56px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		font-style: italic;
+		line-height: 64px;
+		text-align: right;
+		text-shadow: 0px 0px 7px rgba(255, 255, 255, 1);
+	}
+	.regimen {
+		clear:none;
+		float: right;
+		margin-top: 60px;
+	}
+	.regimen_text {
+		margin: 0;
+		font-family: "Rubik", Arial, Helvetica, sans-serif;
+		color: #9a2728;
+		font-size: 40px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		font-style: italic;
+		line-height: 34px; /* Приближение из-за подстановки шрифтов */
+		text-align: center;
+		text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	}
+	.map {
+		width: 1130px;
+		height: 500px;
+		border: 3px #faf2e7 solid;
+		border-radius: 5px;
+		float: left;
+		margin-bottom: 30px;
+	}
+}

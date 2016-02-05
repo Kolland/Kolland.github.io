@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Салон цветов</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Rubik:700italic,400italic&subset=cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css">
+	
+	<script src="js/jquery-1.12.0.min.js"></script>
+	<script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
+	<script>
+		$(document).ready(function() {
+			
+			$("a.gallery_img_wrapper").fancybox({
+				openEffect	: 'elastic',
+				closeEffect	: 'elastic',
+			});
+
+		});
+
+		$(window).load(function() { 
+		    $('.loader_inner').fadeOut(); 
+		    $('.loader').delay(400).fadeOut('slow'); 
+		});
+	</script>
+
+</head>
+<body>
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<div class="main_wrapper">
+		<div class="gallery_main_page">
+			<a href="index.html" class="contacts_link">Контакты</a>
+			<div class="gallery_page-logo">
+			</div>
+			<div class="main_phones">
+				<p class="main_phones_text">+7 (906) 703-22-99</p>
+				<p class="main_phones_text">+7 (985) 384-90-23</p>
+				<p class="main_phones_text">+7 (903) 263-22-00</p>
+				<p class="main_phones_text">+7 (ххх) ххх-хх-хх</p>
+			</div>
+			<a href="index.html" class="map_link">Посмотреть на карте</a>
+			<div class="adress">
+				<p class="info_text">1-ый Хорошевский проезд, д. 10/1</p>
+				<p class="info_text">ул. Мнёвники, д. 13</p>
+				<p class="info_text">пр-т Маршала Жукова, д. 92</p>
+			</div>
+			<div class="gallery_text">
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a href="img/galery/img_1.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_1.jpg" alt="flower">
+				</a>
+				<a href="img/galery/img_2.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_2.jpg" alt="flower">
+				</a>
+				<a href="img/galery/img_3.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_3.jpg" alt="flower">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a href="img/galery/img_1.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_1.jpg" alt="flower">
+				</a>
+				<a href="img/galery/img_2.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_2.jpg" alt="flower">
+				</a>
+				<a href="img/galery/img_3.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_3.jpg" alt="flower">
+				</a>
+			</div>
+		</div>
+		<div class="gallery_page">
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a href="img/galery/img_1.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_1.jpg" alt="flower">
+				</a>
+				<a href="img/galery/img_2.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_2.jpg" alt="flower">
+				</a>
+				<a href="img/galery/img_3.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_3.jpg" alt="flower">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a href="img/galery/img_1.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_1.jpg" alt="flower">
+				</a>
+				<a href="img/galery/img_2.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_2.jpg" alt="flower">
+				</a>
+				<a href="img/galery/img_3.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_3.jpg" alt="flower">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a href="img/galery/img_1.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_1.jpg" alt="flower">
+				</a>
+				<a href="img/galery/img_2.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_2.jpg" alt="flower">
+				</a>
+				<a href="img/galery/img_3.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/img_3.jpg" alt="flower">
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
