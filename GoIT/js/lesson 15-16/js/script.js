@@ -36,7 +36,7 @@ $(function () {
 	$('.search_btn').on( "click", googleIt);
 
 	function googleIt () {
-			console.log ($(".search_input").is(":focus"));
+
 			$('.search_results').remove();
 			var inputVal = $('.search_input').val();
 
@@ -45,39 +45,42 @@ $(function () {
 				'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=large&q='+ inputVal + '&callback=GoogleCallback&context=?',
 				dataType: 'jsonp'
 			});
-			
 	};
 
 	// OOP
-	var human = {
-	  name: 'Andriy',
-	  age: 26,
-	  gender: 'male',
-	  weight:70,
-	  growth:178
-	};
-	
-	var worker = {
-	  job: 'programmer',
-	  salary: 400,
-	  work: function () {
-		// body...
-	  	alert('Work')
-	},
-	  __proto__:human
+	function Human () {
+		this.name = 'Andriy',
+		this.age = 26,
+		this.gender = 'male',
+		this.weight = 70,
+		this.growth = 178
 	};
 
-	var student = {
-	  study: 'ifntung',
-	  scholarship: 50,
-	  watchSeries: function () {
-		// body...
-	  	alert('Смотреть сериалы')
-	},
-	  __proto__:human
+	function Worker () {
+		this.job = 'programmer',
+		this.salary = 400,
+		this.work = function () {
+			alert('Work')
+		},
+		this.__proto__ = human
 	};
 
-	console.log('worker', worker);
+	function Student () {
+		this.study = 'ifntung',
+		this.scholarship = 50,
+		this.watchSeries = function () {
+		  	alert('Смотреть сериалы')
+		},
+		this.__proto__ = human
+	};
+
+	var human = new Human()
+	var worker = new Worker()
+	var student = new Student()
+
+
+	console.log('human', human);
+	console.log('worker age', worker.age);
 	console.log('student', student);
 
 });
