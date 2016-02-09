@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	$('body').append('<div class="callback">')
+
 	$('.callback_btn').on('click', function(){
 		$('.callback_close').show(200);
 		$('.callback_form').addClass('callback_form-active')
