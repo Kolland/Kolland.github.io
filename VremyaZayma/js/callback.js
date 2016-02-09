@@ -10,7 +10,7 @@ $(document).ready(function(){
 		$('.callback_form').append('<span class="callback_text">Введите свой номер и мы перезвоним Вам!')
 						   .append('<input type="text" name="phone" placeholder="Введите номер телефона" class="callback_phone_number">')
 						   .append('<input type="submit" class="callback_submit" value="">')
-						   .append('<input type="hidden" name="_next" value="//php.loc/thanks.html" />');
+						   .append('<input type="hidden" name="_next" value="//kolland.github.io/VremyaZayma/thanks.html" />');
 
 		$('body').append('<div class="lt-xbutton">');
 		$('.lt-xbutton').append('<span class="lt-xbutton-flash lt-flash-left">')
