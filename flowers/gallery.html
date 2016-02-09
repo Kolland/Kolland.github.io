@@ -16,11 +16,13 @@
 	<script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
 	<script>
 		$(document).ready(function() {
-			
-			$("a.gallery_img_wrapper").fancybox({
+			//fancy box
+			$("a[rel=gal_group]").fancybox({
 				openEffect	: 'elastic',
 				closeEffect	: 'elastic',
+				cycling: true
 			});
+
 			//viewport setting
 			setViewport();
 			window.onload = function () {
@@ -79,60 +81,283 @@
 			<div class="gallery_text">
 			</div>
 			<div class="gallery_img_wrapper_box_wrapper">
-				<a href="img/galery/img_1.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_1.jpg" alt="flower">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0001.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0001.jpg" alt="bouquet of flowers">
 				</a>
-				<a href="img/galery/img_2.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_2.jpg" alt="flower">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0002.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0002.jpg" alt="bouquet of flowers">
 				</a>
-				<a href="img/galery/img_3.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_3.jpg" alt="flower">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0003.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0003.jpg" alt="bouquet of flowers">
 				</a>
 			</div>
 			<div class="gallery_img_wrapper_box_wrapper">
-				<a href="img/galery/img_1.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_1.jpg" alt="flower">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0004.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0004.jpg" alt="bouquet of flowers">
 				</a>
-				<a href="img/galery/img_2.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_2.jpg" alt="flower">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0005.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0005.jpg" alt="bouquet of flowers">
 				</a>
-				<a href="img/galery/img_3.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_3.jpg" alt="flower">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0006.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0006.jpg" alt="bouquet of flowers">
 				</a>
 			</div>
 		</div>
 		<div class="gallery_page">
 			<div class="gallery_img_wrapper_box_wrapper">
-				<a href="img/galery/img_1.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_1.jpg" alt="flower">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0007.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0007.jpg" alt="bouquet of flowers">
 				</a>
-				<a href="img/galery/img_2.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_2.jpg" alt="flower">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0008.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0008.jpg" alt="bouquet of flowers">
 				</a>
-				<a href="img/galery/img_3.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_3.jpg" alt="flower">
-				</a>
-			</div>
-			<div class="gallery_img_wrapper_box_wrapper">
-				<a href="img/galery/img_1.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_1.jpg" alt="flower">
-				</a>
-				<a href="img/galery/img_2.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_2.jpg" alt="flower">
-				</a>
-				<a href="img/galery/img_3.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_3.jpg" alt="flower">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0009.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0009.jpg" alt="bouquet of flowers">
 				</a>
 			</div>
 			<div class="gallery_img_wrapper_box_wrapper">
-				<a href="img/galery/img_1.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_1.jpg" alt="flower">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0010.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0010.jpg" alt="bouquet of flowers">
 				</a>
-				<a href="img/galery/img_2.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_2.jpg" alt="flower">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0011.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0011.jpg" alt="bouquet of flowers">
 				</a>
-				<a href="img/galery/img_3.jpg" class="gallery_img_wrapper">
-					<img src="img/galery/img_3.jpg" alt="flower">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0000.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0000.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0013.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0013.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0014.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0014.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0015.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0015.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+		</div>
+		<div class="gallery_page">
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0016.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0016.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0017.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0017.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0018.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0018.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0019.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0019.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0020.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0020.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0021.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0021.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0022.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0022.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0023.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0023.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0024.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0024.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+		</div>
+		<div class="gallery_page">
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0025.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0025.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0026.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0026.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0027.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0027.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0028.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0028.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0029.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0029.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0030.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0030.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0031.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0031.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0032.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0032.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0033.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0033.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+		</div>
+		<div class="gallery_page">
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0034.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0034.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0035.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0035.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0036.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0036.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0037.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0037.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0038.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0038.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0039.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0039.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0040.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0040.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0041.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0041.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0042.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0042.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+		</div>
+		<div class="gallery_page">
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0000.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0000.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0043.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0043.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0044.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0044.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0045.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0045.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0046.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0046.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20151209-WA0047.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20151209-WA0047.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20160126-WA0013.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20160126-WA0013.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20160126-WA0014.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20160126-WA0014.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20160126-WA0016.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20160126-WA0016.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+		</div>
+		<div class="gallery_page">
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20160126-WA0017.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20160126-WA0017.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20160126-WA0018.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20160126-WA0018.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20160126-WA0019.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20160126-WA0019.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/IMG-20160126-WA0020.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20160126-WA0020.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20160126-WA0021.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20160126-WA0021.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/IMG-20160126-WA0022.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/IMG-20160126-WA0022.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0000.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0000.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0001.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0001.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0002.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0002.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+		</div>
+		<div class="gallery_page">
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0003.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0003.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0004.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0004.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0005.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0005.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0006.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0006.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0007.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0007.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0008.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0008.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0009.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0009.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0010.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0010.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0011.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0011.jpg" alt="bouquet of flowers">
+				</a>
+			</div>
+		</div>
+		<div class="gallery_page">
+			<div class="gallery_img_wrapper_box_wrapper">
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0023.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0023.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0024.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0024.jpg" alt="bouquet of flowers">
+				</a>
+				<a rel="gal_group" href="img/galery/animals/IMG-20160126-WA0025.jpg" class="gallery_img_wrapper">
+					<img src="img/galery/animals/IMG-20160126-WA0025.jpg" alt="bouquet of flowers">
 				</a>
 			</div>
 		</div>

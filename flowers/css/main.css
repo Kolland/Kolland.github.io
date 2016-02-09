@@ -94,15 +94,17 @@ body {
 	display: block;
 }
 .owl-carousel-wrapper {
+	overflow: hidden;
 	width: 215px;
 	height: 140px;
 	margin: 0 auto;
 	border: 3px #faf2e7 solid;
 	border-radius: 5px;
-	overflow: hidden;
 }
 .owl-carousel-wrapper img {
-	width: 100%;
+	max-width: 100%;
+  	height: auto;
+
 }
 .owl-carousel-nav {
 	width: 17px;
