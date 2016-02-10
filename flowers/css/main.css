@@ -74,7 +74,19 @@ body {
 	background-size: 100% auto;
 }
 .gallery_text_link {
-	display: none;
+	display: block;
+	float: right;
+	width: 100px;
+	text-align: right;
+	margin-right: 25px;
+	font-family: "Rubik", Arial, Helvetica, sans-serif;
+	color: #645540;
+	font-size: 19px; /* Приближение из-за подстановки шрифтов */
+	font-style: italic;
+	text-decoration: underline;
+}
+.gallery_text_link:hover {
+	text-decoration: none;
 }
 
 .pres_page-baner {
@@ -239,6 +251,9 @@ body {
 	.gallery_text_link {
 		display: block;
 		float: left;
+		width: auto;
+		text-align: left;
+		margin-right: 0;
 		margin-left: 100px;
 		margin-top: -10px;
 		font-family: "Rubik", Arial, Helvetica, sans-serif;
@@ -246,9 +261,6 @@ body {
 		font-size: 22px; /* Приближение из-за подстановки шрифтов */
 		font-style: italic;
 		text-decoration: underline;
-	}
-	.gallery_text_link:hover {
-		text-decoration: none;
 	}
 	.pres_page-baner {
 		width: 370px;
