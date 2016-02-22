@@ -281,16 +281,55 @@ var parsed = JSON.parse(str)
 
 var skills = _.map(parsed, 'skills');
 
+
 var sortByAlphabet = function (array) {
 
-  // shitty code BEGIN
-  var unitedArrays = _.union(array[0], array[1], array[2], array[3], array[4], array[5], array[6]);
-  // shitty code END
+  return _
+    .chain(array)
+    .flatten()
+    .uniq()
+    .sortBy()
+    .value();
   
-  return _.sortBy(unitedArrays);
 }
+
 
 var sortedSkills = sortByAlphabet(skills);
 
 console.log('Массив скиллов всех людей, без повторений, отсортированы по алфавиту = ', sortedSkills);
 
+
+var name = _.map(parsed, 'name')
+
+var friends = _.map(parsed, ['friends', 'name']);
+
+console.log(_.sortBy(friends, function(value) { return _.size(value)}));
+
+console.log(friends);
+
+// _.forEach(_.map(parsed, 'friends'), function(value) {
+//   console.log(value);
+//   console.log(_.size(value));
+// });
+
+
+
+// var friendsArrays = ;
+// var friendsUnited = _.flatten(friendsArrays);
+// var friendsNames = _.map(friendsUnited, 'name');
+// var friendsUniq = _.uniq(friendsNames);
+
+// var friendsArrays = _.chain(parsed)
+//     .map(p, 'friends')
+//     .flatten()
+//     .map(p, 'name')
+//     .sortBy()
+//     .value();
+
+    let numbers = parsed;
+    let sumOfEvenSquares = _.chain(numbers)
+        .map(numbers, 'name')
+        .value();
+    console.log(sumOfEvenSquares);
+
+// console.log('Массив всех друзей всех пользователей, без повторяющихся людей = ', friendsUniq);
