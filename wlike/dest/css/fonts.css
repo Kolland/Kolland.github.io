@@ -1,0 +1,23 @@
+/* DS Officina Serif Book */
+@font-face {
+    font-family: 'DS Officina Serif Book';
+    src: url('../fonts/DS Officina Serif-Book.eot');
+    src: url('../fonts/DS Officina Serif-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DS Officina Serif-Book.woff') format('woff'),
+         url('../fonts/DS Officina Serif-Book.ttf') format('truetype'),
+         url('../fonts/DS Officina Serif-Book.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* DS Officina Serif Book */
+@font-face {
+    font-family: 'DS Officina Serif Bold';
+    src: url('../fonts/DS Officina Serif-Bold.eot');
+    src: url('../fonts/DS Officina Serif-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DS Officina Serif-Bold.woff') format('woff'),
+         url('../fonts/DS Officina Serif-Bold.ttf') format('truetype'),
+         url('../fonts/DS Officina Serif-Bold.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
