@@ -1,0 +1,25 @@
+{
+  "name": "exam",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Kolland <koland.my@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Kolland/Kolland.github.io",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^3.0.3",
+    "jquery": "2.2.1",
+    "modernizr": "2.8.3",
+    "reset-css": "^2.0.2011012603"
+  },
+  "devDependencies": {}
+}

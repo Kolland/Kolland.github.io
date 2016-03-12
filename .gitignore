@@ -1,4 +1,8 @@
 #Ignore node_modules folder
 
 node_modules
-.sass-cache
+bower_components
+**.sass-cache
+files
+**.7z
+**.rar
