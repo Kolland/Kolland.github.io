@@ -325,6 +325,17 @@ console.log(friends);
 //     .map(p, 'name')
 //     .sortBy()
 //     .value();
+  
+  var man = _.map(parsed, function(o) {
+      return { "name": o.name, "friends": o.friends}
+    });
+  console.log(man);
+  var namesSort = _.map(_.sortBy(man, 'friends.length'), 'name');
+
+  console.log('----------------------------------------------------------------');
+  console.log('Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (friends)')
+  console.log(namesSort);
+  console.log('----------------------------------------------------------------');
 
     let numbers = parsed;
     let sumOfEvenSquares = _.chain(numbers)
