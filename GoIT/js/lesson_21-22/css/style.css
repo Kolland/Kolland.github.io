@@ -1,0 +1,50 @@
+@media screen and (max-width: 430px) {
+	.container{
+		width: 430px;		
+	}
+	.modal_results {
+		width: 390px;
+	}
+}
+.modal_wrap {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(1, 1, 1, 0.725);
+	z-index: 100;
+}
+.modal_results {
+	display: block;
+	background-color: white;
+	max-width: 400px;
+	position: fixed;
+	top: -500px;
+	right: 20px;
+	left: 20px;
+	margin: 50px auto;
+	padding: 15px;
+	border-radius: 10px;
+	transition: top 1s;
+}
+.correct_answer {
+	color: green;
+}
+.incorrect_answer {
+	color: red;
+}
+.modal_exit_btn {
+	float: right;
+	border: none;
+	background: none;
+	padding: 0;
+}
+.modal_exit_btn img{
+	width: 25px;
+	transition: transform 0.2s;
+}
+.modal_exit_btn img:hover{
+	transform: rotate(90deg);
+}
