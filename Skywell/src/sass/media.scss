@@ -1,0 +1,202 @@
+@media screen and (max-width: 990px) {
+    .main-wrapper {
+        max-width: 768px;
+        margin: 0 auto -130px;
+    }
+    .content-wrapper {
+        padding: 0 10px;
+    }
+    .main-nav__item {
+        width: 96px;
+    }
+    .banner {
+      &__tab {
+          width: 192px;
+          font-size: 16px;
+          &:before {
+              width: 20px;
+              height: 20px;
+              line-height: 21px;
+          }
+      }
+    }
+    .about {
+        width: 100%;
+    }
+    .ceo-word {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .services {
+        width: 100%;
+    }
+    .teams {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .support {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .copyright {
+        float: none;
+        padding-top: 12px;
+        clear: both;
+        &__logo {
+            display: none;
+        }
+        &__text {
+            text-align: center;
+        }
+    }
+    .twitter-feed {
+        width: 40%;
+    }
+    .sitemap {
+        width: 25%;
+    }
+    .social {
+        width: 25%;
+    }
+    .footer-wrapper {
+        max-width: 748px;
+        padding: 0 10px;
+    }
+
+    footer, .sticky-footer {
+        height: 120px;
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .main-wrapper {
+        max-width: 480px;
+        margin: 0 auto -130px;
+    }
+
+    .search {
+        margin-top: 10px;
+    }
+    .main-nav {
+        &__item {
+            width: 60px;
+        }
+        &__link {
+            font-size: 11px;
+        }
+    }
+      .banner {
+        &__box {
+            padding: 20px;
+        }
+        &__title {
+            font-size: 32px;
+        }
+        &__description {
+            font-size: 16px;
+        }
+        &__tab {
+            width: 120px;
+            font-size: 10px;
+            &:before {
+                width: 15px;
+                height: 15px;
+                line-height: 14px;
+                margin-right: 5px;
+            }
+        }
+      }
+      .footer-wrapper {
+        max-width: 480px;
+      }
+      .sitemap {
+        &__left-col, &__right-col{
+            width: 50px;
+        }
+      }
+}
+
+@media screen and (max-width: 480px) {
+      .main-wrapper {
+        max-width: 320px;
+        margin: 0 auto -230px;
+      }
+      .top-line {
+        text-align: center;
+      }
+      .main-logo, .search {
+        float: none;
+      }
+      .main-nav__item {
+        float: left;
+        width: 80px;
+        border: none;
+        &:first-child {
+            border-left: none;
+        }
+        &:last-child {
+            border-right: none;
+        }
+        &__link {
+            font-size: 11px;
+        }
+      }
+      .banner {
+        &__box {
+            margin-top: 0;
+        }
+        &__title {
+            font-size: 20px;
+        }
+        &__description {
+            font-size: 14px;
+        }
+        &__tab {
+            width: 80px;
+            font-size: 10px;
+            line-height: 15px;
+            vertical-align: middle;
+            padding: 5px 0;
+            &:before {
+                width: 15px;
+                height: 15px;
+                line-height: 14px;
+                margin-right: 5px;
+            }
+        }
+        &__link {
+            vertical-align: middle;
+        }
+      }
+      .footer-wrapper {
+        max-width: 320px;
+      }
+      .twitter-feed {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .sitemap {
+        width: 45%;
+        margin-left: 0;
+      }
+      .social {
+        width: 45%;
+      }
+      .footer-wrapper {
+        max-width: 748px;
+        padding: 0 10px;
+      }
+
+      footer, .sticky-footer {
+        height: 220px;
+        padding-top: 10px;
+      }
+      .sitemap {
+        &__left-col, &__right-col{
+            width: 50px;
+        }
+      }
+
+}
