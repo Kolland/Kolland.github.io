@@ -279,8 +279,10 @@ var str = JSON.stringify(
 
 var parsed = JSON.parse(str)
 
-var skills = _.map(parsed, 'skills');
 
+// 1.Массив скиллов всех людей, без повторений, отсортированы по алфавиту
+
+var skills = _.map(parsed, 'skills');
 
 var sortByAlphabet = function (array) {
 
@@ -289,58 +291,27 @@ var sortByAlphabet = function (array) {
     .flatten()
     .uniq()
     .sortBy()
-    .value();
-  
+    .value(); 
 }
-
 
 var sortedSkills = sortByAlphabet(skills);
 
 console.log('Массив скиллов всех людей, без повторений, отсортированы по алфавиту = ', sortedSkills);
 
+// 2.Массив имен людей, отсортированных в зависимости от количества их друзей
 
-var name = _.map(parsed, 'name')
+var man = _.map(parsed, function(o) {
+    return { "name": o.name, "friends": o.friends}
+  });
+var namesSort = _.map(_.sortBy(man, 'friends.length'), 'name');
 
-var friends = _.map(parsed, ['friends', 'name']);
+console.log('Массив имен людей, отсортированных в зависимости от количества их друзей = ', namesSort)
 
-console.log(_.sortBy(friends, function(value) { return _.size(value)}));
+// 3.Массив всех друзей всех пользователей, без повторяющихся людей
 
-console.log(friends);
+var friendsArrays = _.map(parsed, 'friends');
+var friendsUnited = _.flatten(friendsArrays);
+var friendsNames = _.map(friendsUnited, 'name');
+var friendsUniq = _.uniq(friendsNames);
 
-// _.forEach(_.map(parsed, 'friends'), function(value) {
-//   console.log(value);
-//   console.log(_.size(value));
-// });
-
-
-
-// var friendsArrays = ;
-// var friendsUnited = _.flatten(friendsArrays);
-// var friendsNames = _.map(friendsUnited, 'name');
-// var friendsUniq = _.uniq(friendsNames);
-
-// var friendsArrays = _.chain(parsed)
-//     .map(p, 'friends')
-//     .flatten()
-//     .map(p, 'name')
-//     .sortBy()
-//     .value();
-  
-  var man = _.map(parsed, function(o) {
-      return { "name": o.name, "friends": o.friends}
-    });
-  console.log(man);
-  var namesSort = _.map(_.sortBy(man, 'friends.length'), 'name');
-
-  console.log('----------------------------------------------------------------');
-  console.log('Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (friends)')
-  console.log(namesSort);
-  console.log('----------------------------------------------------------------');
-
-    let numbers = parsed;
-    let sumOfEvenSquares = _.chain(numbers)
-        .map(numbers, 'name')
-        .value();
-    console.log(sumOfEvenSquares);
-
-// console.log('Массив всех друзей всех пользователей, без повторяющихся людей = ', friendsUniq);
+console.log('Массив всех друзей всех пользователей, без повторяющихся людей = ', friendsUniq);
