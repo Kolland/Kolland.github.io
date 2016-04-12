@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tournament</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="trnm-set">
+		<label for="trnm-name">Enter tournament name</label>
+		<input type="text" id="trnm-name"><br>
+		<label for="team-number">Enter number of teams</label>
+		<input type="text" id="team-number" value="16"><br>
+
+		<input type="radio" name="trnm-mode" value="single" checked="checked"> Single Elimination<br>
+		<input type="radio" name="trnm-mode" value="double"> Double Elimination<br>
+
+		<button id="generate">Генерировать</button>
+	</div>
+	<div id="grid"></div>
+
+	<script type="text/template" id="grid-template">
+		<% var teams = teams; %>
+		<% for ( var i = 0; i < tours; i++ ) { %>
+		  <div id="tour">
+		  	<% 	for ( var j = 0; j < teams; j++ ) { %>
+		  		<input type="text">
+		  	<% } %>
+
+		  	<% 	for ( var j = 0; j < teams; j++ ) { %>
+		  		<input type="text">
+		  	<% } %>
+		  </div>
+		<% teams/=2; } %>
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/scriptMVC.js"></script>
+</body>
+</html>

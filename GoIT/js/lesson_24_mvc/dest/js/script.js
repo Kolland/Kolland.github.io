@@ -98,6 +98,7 @@ function Controller (model, view) {
 
   function removeItem () {
     var item = $(this).attr('data-value');
+    console.log($(this));
     model.removeItem(item);
     view.renderList(model.data);
     console.log(item);

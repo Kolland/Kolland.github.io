@@ -1,0 +1,12 @@
+#grid {
+	position: absolute;
+}
+#tour {
+	display: inline-block;
+	
+}
+
+#tour input {
+	display: block;
+	
+}
