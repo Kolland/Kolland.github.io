@@ -6,3 +6,9 @@
 .how-it-works__descript {
 	color: #fff;
 }
+.get-action-btn:hover {
+	background-color: #FF7B7D;
+}
+.holidays__search-btn:hover {
+	background-color: #FF7B7D;
+}
