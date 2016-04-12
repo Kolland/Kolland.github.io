@@ -1,0 +1,6 @@
+.how-it-works__overlay {
+	background: none;
+	filter: none;
+	background: transparent url(../img/how-it-works-overlay.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
