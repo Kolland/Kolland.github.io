@@ -82,8 +82,14 @@ noscript {
 		font-size: 16px;
 		padding: 0 12px;
 		text-decoration: none;
+		transition: border-top 0.3s;
+		border-top: 1px solid transparent;
 		&:hover {
-			color: #262626;
+			border-top: 1px solid #cddc39;
+		}
+		&--active {
+			text-decoration: line-through;
+			color: #cddc39;
 		}
 	}
 
@@ -209,6 +215,8 @@ noscript {
 
 .gallery {
 	transition: padding-left 0.2s;
+	overflow: hidden;
+	width: 100%;
 	&:hover {
 		padding-left: 100px;
 		.owl-prev {
@@ -452,3 +460,7 @@ noscript {
 	}
 
 }
+
+
+// media query
+@import "media.scss";

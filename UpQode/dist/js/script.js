@@ -1,4 +1,30 @@
 jQuery(document).ready(function($) {
+	//viewport setting
+
+	setViewport();
+
+	window.onload = function () {
+		setViewport();
+	};
+	window.onresize = function(event) {
+		setViewport();
+	};
+
+	function setViewport(){
+		var mvp;
+
+	 	if(screen.width <= 500) {
+
+	 		mvp = document.getElementById('myViewport');
+	  		mvp.setAttribute('content', 'width=500, user-scalable=no');
+
+	 	} else {
+
+    		mvp = document.getElementById('myViewport');
+    		mvp.setAttribute('content', 'width=device-width, user-scalable=no, initial-scale=1');
+    
+    	}
+	}
 
 	// hamburger menu
 
@@ -24,9 +50,28 @@ jQuery(document).ready(function($) {
 	// owl-carousel
 	$('.owl-carousel').owlCarousel({
 		autoWidth	: true,
-		// items:4
+		loop 		: true,
+		items 		: 4,
+		// mergeFit	: false,
 		nav			: true,
 		navText		: ['<i class="icon-arrow-left">','<i class="icon-arrow-right">'],
+		responsive : {
+		    // breakpoint from 0 up
+		    0 : {
+		    	autoWidth	: true,
+		        items 		: 4,
+		    },
+		    // breakpoint from 480 up
+		    480 : {
+		    	autoWidth	: true,
+		        items 		: 4,
+		    },
+		    // breakpoint from 768 up
+		    768 : {
+		    	autoWidth	: true,
+		        items 		: 4,
+		    }
+		}
 	})
 
 
