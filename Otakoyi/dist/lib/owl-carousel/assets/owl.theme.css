@@ -1,0 +1,58 @@
+/*main slider nav*/
+.slider .owl-prev {
+	position: absolute;
+	background: transparent url(arrows.png) 0 0 no-repeat;
+	width: 22px;
+	height: 14px;
+	bottom: 69px;
+	right: 428px;
+	transition: background 0.2s;
+}
+.slider .owl-prev:hover {
+	background: transparent url(arrows.png) -28px 0 no-repeat;
+}
+.slider .owl-next {
+	position: absolute;
+	background: transparent url(arrows.png) -56px 0 no-repeat;
+	width: 22px;
+	height: 14px;
+	bottom: 68px;
+	right: 380px;
+	transition: background 0.2s;
+}
+.slider .owl-next:before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: -15px;
+	width: 6px;
+	height: 6px;
+	background-color: #cacaca;
+}
+.slider .owl-next:hover {
+	background: transparent url(arrows.png) -84px 0 no-repeat;
+}
+
+/*events and reviews dots nav*/
+.events__slider .owl-dots{
+	position: absolute;
+	top: -58px;
+	left: 105px;
+}
+.reviews__slider-box .owl-dots{
+	position: absolute;
+	top: -58px;
+	left: 150px;
+}
+.events__slider .owl-dot, .reviews__slider-box .owl-dot {
+	float: left;
+	margin-right: 3px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #4e4e4f;
+	border-radius: 50%;
+}
+
+.events__slider .owl-dots .active, .reviews__slider-box .owl-dots .active {
+	background-color: #4e4e4f;
+}

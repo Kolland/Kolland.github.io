@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Walgreens</title>
+	<meta id="myViewport" charset="utf-8" http-equiv="Content-Type"  name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+	<script>
+		setViewport();
+
+		window.onload = function () {
+			setViewport();
+		};
+		window.onresize = function(event) {
+			setViewport();
+		};
+
+		function setViewport(){
+			var mvp;
+
+		 	if(screen.width <= 640) {
+
+		 		mvp = document.getElementById('myViewport');
+		  		mvp.setAttribute('content', 'width=640, user-scalable=no');
+
+		 	} else {
+
+	    		mvp = document.getElementById('myViewport');
+	    		mvp.setAttribute('content', 'width=device-width, user-scalable=no, initial-scale=1');
+	    
+	    	}
+		}
+	</script>
+	
+	<!--[if lt IE 9]>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,500,400' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="overlay">
+	</div>
+
+	<header class="main-header">
+		<div class="main-header__wrapper clearfix">
+			<a href="index.html" class="main-header__logo"><img src="img/logo.jpg" alt="walgreens logo"></a>
+			<a href="index.html" class="main-header__logo--mobile"><img src="img/logo-mobile.jpg" alt="walgreens logo"></a>
+
+			<div class="main-header__greeting">
+				<p class="main-header__welcome">Welcome <span class="main-header__usr-name">John</span>,</p>
+				<a href="#logout" class="main-header__logout">Logout</a>
+			</div>
+		</div>
+
+	</header>
+
+	<section class="text-block">
+		<h2 class="text-block__title">Walgreens</h2>
+		<p class="text-block__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</section>
+
+	<section class="login-box">
+		<h4 class="login-box__title">Login</h4>
+		<form action="" class="login-box__form">
+			<input type="text" class="login-box__username" placeholder="username">
+			<input type="password" class="login-box__password" placeholder="password">
+			<a href="#forgot_pass" class="login-box__forgot">forgot password?</a>
+			<input type="submit" class="login-box__sign"value="Sign In">
+		</form>
+		<a href="#create-member" class="login-box__create">Create Membership</a>
+
+		<footer class="login-box__footer">
+			<span class="login-box__footer-text">By clicking the "Get Started", you agree to the RunKeeper<br><a href="#service">Terms of Service</a> and <a href="#policy">Privacy Policy</a></span>
+		</footer>
+	</section>
+
+
+
+
+	
+</body>
+</html>

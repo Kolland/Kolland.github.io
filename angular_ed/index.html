@@ -4,13 +4,80 @@
 	<meta charset="UTF-8">
 	<title>Angular ED</title>
 
+	<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 	<div ng-controller="myCtrl">
 		{{hello}}
+		{{getText()}}
+
+		<button ng-click="setHello('Foo')">Foo</button>
+		<button ng-click="setHello('Bar')">Bar</button>
+
+		{{myFactory.hello()}}
 	</div>
 	
+	<h2>Filters</h2>
+
+	<div ng-controller="filtCtrl">
+		{{money1 | moneyFilter}}
+		{{money2 | moneyFilter}}
+		{{money3 | moneyFilter}}
+
+	</div>
+
+	<h2>Transclude</h2>
+
+	<div ng-controller="transCtrl">
+		<foo-bar>This is {{name}}</foo-bar>
+	</div>
+
+
+	<h2>TemplateURL</h2>
+
+	<foo-temp></foo-temp>
+
+	<script type="text/ng-template" id="bookmarks.html">
+		<div ng-repeat="bookmark in bookmarks">
+			{{bookmark.name}}
+		</div>
+	</script>
+
+
+	<h2>Transclude element</h2>
+	<form action="" wrap-in='table'>
+		<div>
+			<label for="">Email:</label>
+			<input type="text" placeholder="Place your email">
+		</div>	
+		<div>
+			<label for="">Password:</label>
+			<input type="text" placeholder="Place your password">
+		</div>
+		<button>Submit</button>
+	</form> 
+
+	<script type="text/ng-template" id='red'>
+		<div class="red"></div>
+	</script>
+
+	<h2>HTTP request</h2>
+	<div ng-controller="httpCtrl">
+		<input type="text" ng-model="book.name">
+		<input type="button" ng-click="addBook(book)" value="Add me new book">
+		<div ng-repeat="book in books">
+			{{book.name}}
+		</div>
+	</div>
+
+	<script type="text/ng-template" id='table'>
+		<div> Header for table </div>
+	</script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-mocks.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>

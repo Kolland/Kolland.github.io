@@ -1,0 +1,82 @@
+@media screen and (max-width: 640px) {
+	.overlay {
+		background-color: #ee4444;
+		opacity: 0.5;
+		/* IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+		/* IE 5-7 */
+		filter: alpha(opacity=80);
+	}
+
+	.main-header {
+		width: 100%;
+		height: 152-25px;
+		background-color: #fff;
+		padding-top: 25px;
+		&__logo {
+			display: none;
+			&--mobile {
+				display: block;
+			}
+		}
+		&__greeting {
+			display: none;
+		}
+	}
+
+	.text-block {
+		display: none;
+	}
+	.login-box {
+		width: 600-80px;
+		padding: 25px 40px 16px;
+		margin: 87px auto 0;
+		&__title {
+			font-size: 30px;
+		}
+		&__form {
+			margin: 60px 22px 0;
+		}
+		&__username, &__password {
+			font-size: 24px;
+			line-height: 59px;
+		}
+		&__password {
+			margin-top: 26px;
+		}
+		&__forgot {
+			margin-bottom: 28px;
+			font-size: 18px;
+			line-height: 54px;
+		}
+		&__sign, &__create {
+			font-size: 24px;
+		}
+		&__sign {
+			height: 91px;
+		}
+		&__create {
+			margin-top: 24px;
+			margin-left: 22px;
+			width: 472px;
+			line-height: 88px;
+		}
+		&__footer {
+			margin-top: 11px;
+			font-size: 16px;
+			line-height: 32px;
+		}
+
+
+	}
+}
+
+@media screen and (orientation: landscape) and (max-width: 1200px){
+	html, body {
+		height: auto;
+	}
+	body {
+		padding-bottom: 30px;
+
+	}
+}

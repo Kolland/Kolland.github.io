@@ -1,0 +1,236 @@
+html {
+  height: 100%;
+  background: url(../img/main-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+body {
+  height: 100%;
+  position: relative;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: #6e3434;
+  opacity: 0.4;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  /* IE 5-7 */
+  filter: alpha(opacity=20); }
+
+.main-header {
+  width: 100%;
+  height: 117px;
+  background-color: #fff;
+  padding-top: 25px;
+  -webkit-box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.59);
+  box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.59); }
+  .main-header__wrapper {
+    max-width: 1146px;
+    margin: 0 auto; }
+  .main-header__logo {
+    float: left;
+    margin-left: 120px; }
+    .main-header__logo--mobile {
+      float: left;
+      margin-left: 32px;
+      display: none; }
+  .main-header__greeting {
+    float: right;
+    margin-top: 15px;
+    color: #333; }
+  .main-header__welcome {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: default; }
+  .main-header__usr-name {
+    font-weight: 600; }
+  .main-header__logout {
+    float: right;
+    position: relative;
+    color: #e21635;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: right;
+    line-height: 38px; }
+    .main-header__logout:hover {
+      text-decoration: none; }
+    .main-header__logout:before {
+      content: '';
+      position: absolute;
+      left: -21px;
+      top: 15px;
+      background-image: url("../img/logout-arrow.png");
+      display: block;
+      width: 14px;
+      height: 7px; }
+
+.text-block {
+  width: 468px;
+  margin: 0 auto; }
+  .text-block__title {
+    font-size: 60px;
+    color: #fff; }
+  .text-block__description {
+    font-size: 18px;
+    color: #fff;
+    line-height: 24px;
+    height: 96px;
+    overflow: hidden; }
+
+.login-box {
+  width: 400px;
+  padding: 20px 34px 16px;
+  margin: 24px auto 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.23); }
+  .login-box__title {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: 300;
+    cursor: default; }
+  .login-box__form {
+    margin: 45px 15px 0; }
+  .login-box__username, .login-box__password {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #bfbfbf;
+    font-size: 16px;
+    line-height: 46px;
+    height: 46px;
+    color: #6f6f6f;
+    transition: border-bottom 0.2s ease-in; }
+    .login-box__username:focus, .login-box__password:focus {
+      outline: none;
+      border-bottom: 1px solid #e21635; }
+  .login-box__password {
+    margin-top: 20px; }
+  .login-box__forgot {
+    float: right;
+    margin-bottom: 22px;
+    color: #6f6f6f;
+    font-size: 14px;
+    line-height: 42px; }
+    .login-box__forgot:hover {
+      text-decoration: none; }
+  .login-box__sign, .login-box__create {
+    display: block;
+    background: none;
+    border-radius: 2px;
+    font-size: 18px; }
+  .login-box__sign {
+    clear: both;
+    width: 100%;
+    height: 68px;
+    border: 2px solid #e16565;
+    color: #e16565;
+    cursor: pointer;
+    transition: border 0.2s ease-in, color 0.2s ease-in; }
+    .login-box__sign:hover {
+      border: 2px solid #e21635;
+      color: #e21635; }
+  .login-box__create {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 366px;
+    border: 2px solid #636363;
+    color: #000;
+    text-align: center;
+    line-height: 68px;
+    text-decoration: none;
+    transition: border 0.2s ease-in; }
+    .login-box__create:hover {
+      border: 2px solid #000; }
+  .login-box__footer {
+    text-align: center;
+    margin-top: 11px;
+    font-size: 12px;
+    color: #333;
+    line-height: 24px;
+    font-weight: 300; }
+    .login-box__footer a {
+      text-decoration: none;
+      color: #c71515; }
+      .login-box__footer a:hover {
+        text-decoration: underline; }
+
+@media screen and (max-width: 640px) {
+  .overlay {
+    background-color: #ee4444;
+    opacity: 0.5;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    /* IE 5-7 */
+    filter: alpha(opacity=80); }
+
+  .main-header {
+    width: 100%;
+    height: 127px;
+    background-color: #fff;
+    padding-top: 25px; }
+    .main-header__logo {
+      display: none; }
+      .main-header__logo--mobile {
+        display: block; }
+    .main-header__greeting {
+      display: none; }
+
+  .text-block {
+    display: none; }
+
+  .login-box {
+    width: 520px;
+    padding: 25px 40px 16px;
+    margin: 87px auto 0; }
+    .login-box__title {
+      font-size: 30px; }
+    .login-box__form {
+      margin: 60px 22px 0; }
+    .login-box__username, .login-box__password {
+      font-size: 24px;
+      line-height: 59px; }
+    .login-box__password {
+      margin-top: 26px; }
+    .login-box__forgot {
+      margin-bottom: 28px;
+      font-size: 18px;
+      line-height: 54px; }
+    .login-box__sign, .login-box__create {
+      font-size: 24px; }
+    .login-box__sign {
+      height: 91px; }
+    .login-box__create {
+      margin-top: 24px;
+      margin-left: 22px;
+      width: 472px;
+      line-height: 88px; }
+    .login-box__footer {
+      margin-top: 11px;
+      font-size: 16px;
+      line-height: 32px; } }
+@media screen and (orientation: landscape) and (max-width: 1200px) {
+  html, body {
+    height: auto; }
+
+  body {
+    padding-bottom: 30px; } }
+
+

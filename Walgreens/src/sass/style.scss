@@ -1,0 +1,212 @@
+// Common Styles
+html {
+	height: 100%;
+	background: url(../img/main-bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both; 
+}
+body {
+	height: 100%;
+	position: relative;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	background-color: #6e3434;
+	opacity: 0.4;
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	/* IE 5-7 */
+	filter: alpha(opacity=20);
+}
+
+.main-header {
+	width: 100%;
+	height: 142-25px;
+	background-color: #fff;
+	padding-top: 25px;
+	-webkit-box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.59);
+	-moz-box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.59);
+	box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.59);
+	&__wrapper {
+		max-width: 1146px;
+		margin: 0 auto;
+	}
+	&__logo {
+		float: left;
+		margin-left: 120px;
+		&--mobile {
+			float: left;
+			margin-left: 32px;
+			display: none;
+		}
+	}
+	&__greeting {
+		float: right;
+		margin-top: 15px;
+		color: #333;
+	}
+	&__welcome {
+		margin: 0;
+		font-size: 18px;
+		font-weight: 300;
+		cursor: default;
+	}
+	&__usr-name {
+		font-weight: 600;
+	}
+	&__logout {
+		float: right;
+		position: relative;
+		color: #e21635;
+		font-weight: 600;
+		font-size: 14px;
+		text-align: right;
+		line-height: 38px;
+		&:hover {
+			text-decoration: none;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			left: -21px;
+			top: 15px;
+			background-image: url('../img/logout-arrow.png');
+			display: block;
+			width: 14px;
+			height: 7px;
+		}
+	}
+
+}
+
+
+.text-block {
+	width: 468px;
+	margin: 0 auto;
+	&__title {
+		font-size: 60px;
+		color: #fff;
+	}
+	&__description {
+		font-size: 18px;
+		color: #fff;
+		line-height: 24px;
+		height: 24*4px;
+		overflow: hidden;
+	}
+}
+.login-box {
+	width: 468-68px;
+	padding: 20px 34px 16px;
+	margin: 24px auto 0;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.23);
+	-moz-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.23);
+	box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.23);
+	&__title {
+		margin: 0;
+		color: #333;
+		font-size: 24px;
+		font-weight: 300;
+		cursor: default;
+	}
+	&__form {
+		margin: 45px 15px 0;
+	}
+	&__username, &__password {
+		display: block;
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid #bfbfbf;
+		font-size: 16px;
+		line-height: 46px;
+		height: 46px;
+		color: #6f6f6f;
+		transition: border-bottom 0.2s ease-in;
+
+		&:focus {
+			outline: none;
+			border-bottom: 1px solid #e21635;
+		}
+	}
+	&__password {
+		margin-top: 20px;
+	}
+	&__forgot {
+		float: right;
+		margin-bottom: 22px;
+		color: #6f6f6f;
+		font-size: 14px;
+		line-height: 42px;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&__sign, &__create {
+		display: block;
+		background: none;
+		border-radius: 2px;
+		font-size: 18px;
+	}
+	&__sign {
+		clear: both;
+		width: 100%;
+		height: 68px;
+		border: 2px solid #e16565;
+		color: #e16565;
+		cursor: pointer;
+		transition: border 0.2s ease-in, color 0.2s ease-in;
+		&:hover {
+			border: 2px solid #e21635;
+			color: #e21635;
+		}
+	}
+	&__create {
+		margin-top: 20px;
+		margin-left: 15px;
+		width: 366px;
+		border: 2px solid #636363;
+		color: #000;
+		text-align: center;
+		line-height: 68px;
+		text-decoration: none;
+		transition: border 0.2s ease-in;
+		&:hover {
+			border: 2px solid #000;
+		}
+	}
+	&__footer {
+		text-align: center;
+		margin-top: 11px;
+		font-size: 12px;
+		color: #333;
+		line-height: 24px;
+		font-weight: 300;
+		a {
+			text-decoration: none;
+			color: #c71515;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+
+}
+
+@import "media.scss";
+
+	

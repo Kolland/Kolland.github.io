@@ -1,0 +1,162 @@
+@import '../../node_modules/susy/sass/susy';
+
+/* Changing Susy default global settings */
+$susy: (
+	columns: 				12,
+	container: 				1140px,
+	gutters: 				0,
+	debug: (
+		image: 				hide,
+		color: 				rgba(#66f, .25),
+		output: 			background,
+		toggle: 			top right,
+	)
+);
+
+$main-layout: (
+	columns: 				12,
+	container: 				1140px,
+	gutters: 				0,
+	debug: (
+		image: 				hide,
+		color: 				rgba(#66f, .25),
+		output: 			background,
+		toggle: 			top right,
+	)
+);
+$cat-layout: (
+	columns: 				4,
+	container: 				1140px,
+	gutters: 				.07,
+	debug: (
+		image: 				hide,
+		color: 				rgba(#66f, .25),
+		output: 			background,
+		toggle: 			top right,
+	)
+);
+
+$about-layout: (
+	columns: 				3,
+	container: 				1140px,
+	gutters: 				.12,
+	debug: (
+		image: 				hide,
+		color: 				rgba(#66f, .25),
+		output: 			background,
+		toggle: 			top right,
+	)
+);
+
+$events-layout: (
+	columns: 				2,
+	container: 				1140px,
+	gutters: 				.11,
+	debug: (
+		image: 				hide,
+		color: 				rgba(#66f, .25),
+		output: 			background,
+		toggle: 			top right,
+	)
+);
+
+.container {
+	@include container;
+}
+.main-header {
+	&__phone {
+		@include span(4);
+	}
+	&__search-wrap {
+		@include span(1);
+		@include push(3);
+	}
+	&__lang-wrap {
+		@include span(1);
+	}
+	&__login-wrap {
+		@include span(3);
+	}
+	&__menu-row {
+		@include span(12);
+	}
+	&__logo {
+		@include span(2);
+	}
+	&__menu {
+		@include span(8);
+		@include push(2);
+	}
+}
+
+.slider {
+	@include span(12);
+}
+
+.categories {
+	@include layout($cat-layout);
+	@include span(4);
+	&__item {
+		@include span(1 of 4);
+		&:last-child {
+		  @include last;
+		}
+	}
+}
+
+.about {
+	@include layout($about-layout);
+	@include span(3);
+	&__item {
+		@include span(1 of 3);
+		&:last-child {
+		  @include last;
+		}
+	}
+}
+
+// .events {
+// 	@include layout($events-layout);
+// 	@include span(2);
+// 	&__heading {
+// 		@include span(2);
+// 	}
+// 	&__slider {
+// 		@include span (2);
+// 	}
+// 	&__item {
+// 		@include span(1);
+// 		&:last-child {
+// 		  @include last;
+// 		}
+// 	}
+// }
+
+.events {
+	@include layout($main-layout);
+	@include span(12);
+}
+.reviews {
+	@include span(12);
+	&__slider-box {
+		@include span(9);
+	}
+	&__mail-us-wrap {
+		@include span(3)
+	}
+}
+.prefooter {
+	@include span(12);
+	&__middle-col {
+			@include span(4)
+	}
+}
+.contacts {
+		@include span(4);
+}
+.middle-col {
+		@include span(4)
+}	
+.appeal {
+		@include span(4)
+}
