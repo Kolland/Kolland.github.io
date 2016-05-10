@@ -1,0 +1,21 @@
+.owl-prev {
+	position: absolute;
+	top: -1405px;
+	left: -40px;
+	transition: top 0.5s ease-out 0.5s;
+}
+
+.owl-prev>svg {
+	width: 20px;
+	height: 20px;
+}
+.owl-next {
+	position: absolute;
+	top: 1459px;
+	left: -40px;
+	transition: top 0.5s ease-out 0.5s;
+}
+.owl-next>svg {
+	width: 20px;
+	height: 20px;
+}
