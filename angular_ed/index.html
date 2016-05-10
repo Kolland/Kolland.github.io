@@ -4,7 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Angular ED</title>
 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/prettify.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-mocks.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
 
 </head>
 <body>
@@ -71,13 +76,21 @@
 		</div>
 	</div>
 
+	<h2>Compile</h2>
+	<ui-source>
+		<div>
+			<label for="">Name:</label>
+			<input type="text" ng-model="yourName" placeholder="Enter a name here">
+			
+			<hr>
+			<h1>Hello {{yourName}}</h1>
+		</div>
+	</ui-source>
+
 	<script type="text/ng-template" id='table'>
 		<div> Header for table </div>
 	</script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-mocks.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
-	<script src="script.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

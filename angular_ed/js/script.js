@@ -81,7 +81,6 @@ app.directive('fooBar', function () {
 		transclude: true,
 		template: 'This is may super directive',
 		link: function (scope, element, attrs, controller, transclude) {
-			console.log('This is my super directive');
 			transclude(scope, function (clone, scope) {
 				element.append(clone);
 			})
@@ -117,7 +116,6 @@ app.directive('fooTemp', function ($templateCache) {
 		templateUrl: 'bookmarks.html',
 		link: function (scope, element, attrs) {
 			scope.bookmarks = bookmarks
-			console.log('tempCache', $templateCache.info());
 		}
 	}
 })
@@ -131,11 +129,8 @@ app.directive('wrapIn', function ($templateCache) {
 			var template = $templateCache.get(attrs.wrapIn);
 			var templateElement = angular.element(template)
 
-			console.log('wrap in', templateElement);
-
 			transclude(scope, function(clone) {
 				element.after(templateElement.append(clone));
-				console.log(clone);
 			})
 		}
 	}
@@ -167,3 +162,18 @@ app.controller('httpCtrl', function ($http, $scope) {
 	}
 })
 
+// Compile
+app.directive('uiSource', function () {
+	return {
+		compile: function (elem) {
+			var escape = function (content) {
+				return content.replace(/\</g, '&lt;')
+
+			console.log(pretty);
+
+			pre.append(pretty);
+			elem.replaceWith(pre);
+
+		}
+	}
+})
