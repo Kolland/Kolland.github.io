@@ -1,12 +1,44 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
 	.main-header {
-		padding-left: 50px
+		padding-left: 65px
 	}
 	.header-socials {
 		margin-right: 50px;
 	}
 	.main-footer {
-		padding: 0 50px;
+		padding: 0 65px;
 
+	}
+}
+@media screen and (max-width: 1100px) {
+	.quote {
+		display: none;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.gallery:hover {
+		padding-left: 0;
+		.owl-prev {
+			top: -1405px;
+		}
+		.owl-next {
+			top: 1459px;
+		}
+	}
+
+}
+
+@media screen and (orientation: portrait) and (max-width: 1100px) {
+	.gallery:hover {
+		padding-left: 0;
+		.owl-prev {
+			top: -1405px;
+		}
+		.owl-next {
+			top: 1459px;
+		}
+	}
+	.quote {
+		display: none;
 	}
 }

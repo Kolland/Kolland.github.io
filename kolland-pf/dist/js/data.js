@@ -2,6 +2,20 @@ var portfolioItems = [
 	[
 		{
 			classification: 'Landing Page',
+			techStack: 'HTML5, CSS3/Sass, js/jQuery, AJAX',
+			method: 'Responsive Web, Mobile First, BEM',
+			fullPic: 'urlaubsgluck-screens.jpg',
+			tmbPic: 'urlaubsgluck-thumb.jpg',
+			link: 'https://kolland.github.io/GoIT/js/exam/dist/index.html',
+			techIcons: [
+				'html5',
+				'sass',
+				'jquery',
+				'responsive-design'
+			]
+		},
+		{
+			classification: 'Landing Page',
 			techStack: 'HTML5, CSS3',
 			method: 'Responsive Web',
 			fullPic: 'pingbuller-screens.jpg',
@@ -11,20 +25,6 @@ var portfolioItems = [
 				'html5',
 				'css3',
 				'responsive-design'
-			]
-		},
-		{
-			classification: 'Landing Page and gallery',
-			techStack: 'HTML5, CSS3, js/jQuery, Google Maps API',
-			method: 'Responsive Web, Mobile first, BEM',
-			fullPic: 'flowers-screens.jpg',
-			tmbPic: 'flowers-thumb.jpg',
-			link: 'http://оптцветмаг.рф/',
-			techIcons: [
-				'html5',
-				'css3',
-				'jquery',
-				'responsive-design',
 			]
 		},
 		{
@@ -60,7 +60,7 @@ var portfolioItems = [
 			classification: 'Product Page Mobile Version',
 			techStack: 'HTML5, CSS3',
 			fullPic: 'agusha-full.jpg',
-			tmbPic: 'agusha-thumb.png',
+			tmbPic: 'agusha-thumb.jpg',
 			link: 'http://agusha.com.ua/product/ua_detskiy-tvorog-kislomolochnyy-klassicheskiy-100-g',
 			techIcons: [
 				'html5',
@@ -69,19 +69,20 @@ var portfolioItems = [
 			]
 		},
 		{
-			classification: 'Landing Page',
-			techStack: 'HTML5, CSS3/Sass, js/jQuery, AJAX',
-			method: 'Responsive Web, Mobile First, BEM',
-			fullPic: 'urlaubsgluck-screens.jpg',
-			tmbPic: 'urlaubsgluck-thumb.jpg',
-			link: 'https://kolland.github.io/GoIT/js/exam/dist/index.html',
+			classification: 'Landing Page and gallery',
+			techStack: 'HTML5, CSS3, js/jQuery, Google Maps API',
+			method: 'Responsive Web, Mobile first, BEM',
+			fullPic: 'flowers-screens.jpg',
+			tmbPic: 'flowers-thumb.jpg',
+			link: 'http://оптцветмаг.рф/',
 			techIcons: [
 				'html5',
-				'sass',
+				'css3',
 				'jquery',
-				'responsive-design'
+				'responsive-design',
 			]
 		},
+
 	],
 	[
 		{
@@ -196,6 +197,6 @@ var portfolioItems = [
 ];
 
 jQuery(document).ready(function($) {
-	var list = tmpl($('#list-template').html(), {data: portfolioItems});
+	var list = tmpl($('#grid-template').html(), {data: portfolioItems});
 	$('.gallery__grid').html(list);
 });

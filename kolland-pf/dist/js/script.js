@@ -55,7 +55,7 @@ jQuery(document).ready(function($) {
 		// stagePadding: 50,
 		// mergeFit	: true,
 		nav			: true,
-		navText		: ['<svg><use xlink:href="#next"></svg>','<svg><use xlink:href="#back"></svg>'],
+		navText		: ['<svg><use xlink:href="#back"></svg>','<svg><use xlink:href="#next"></svg>'],
 		responsive : {
 		    // breakpoint from 0 up
 		    // 0 : {

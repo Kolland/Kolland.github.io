@@ -1,16 +1,17 @@
 @import "var.scss";
-
+html {
+	background-color: $bottom-bg-color;
+}
 // common styles
 body {
-	height: 100%;
 	background: $top-bg-color;
 	background: -moz-linear-gradient(top, $top-bg-color 0%, $bottom-bg-color 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, $top-bg-color), color-stop(100%, $bottom-bg-color));
-	background: -webkit-linear-gradient(top, $top-bg-color 0%, rgba(104,58,183,1) 100%);
+	background: -webkit-linear-gradient(top, $top-bg-color 0%, $bottom-bg-color 100%);
 	background: -o-linear-gradient(top, $top-bg-color 0%, $bottom-bg-color 100%);
 	background: -ms-linear-gradient(top, $top-bg-color 0%, $bottom-bg-color 100%);
 	background: linear-gradient(to bottom, $top-bg-color 0%, $bottom-bg-color 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top-bg-color', endColorstr='$bottom-bg-color', GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FF512F', GradientType=0 );
 }
 .clearfix:after {
   content: "";
@@ -26,6 +27,7 @@ noscript {
 .main-header {
 	padding-left: 200px;
 	height: 65px;
+	position: relative;
 	&__logo {
 		float: left;
 		margin-top: 13px;
@@ -34,9 +36,10 @@ noscript {
 			font-size: 24px;
 			line-height: 24px;
 			letter-spacing: 6px;
+			color: #A23F6A;
 		}
 		a {
-			color: #000;
+			color: #A23F6A;
 			text-decoration: none;
 		}
 		p {
@@ -44,6 +47,26 @@ noscript {
 			margin-left: 1px;
 			font-size: 12px;
 		}
+	}
+}
+.quote {
+	width: 700px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #8C0D45;
+	margin-top: 15px;
+	&__text {
+		margin: 0;
+		text-align: center;
+		font-style: italic;
+		font-weight: 400;
+
+	}
+	&__author {
+		text-align: right;
+		font-size: 14px;
+		font-weight: 700;
 	}
 }
 .header-socials {
@@ -115,10 +138,10 @@ noscript {
 	&:hover {
 		padding-left: 65px;
 		.owl-prev {
-			top: 405px;
+			top: 459px;
 		}
 		.owl-next {
-			top: 459px;
+			top: 405px;
 		}
 	}
 	&__col {
@@ -129,7 +152,6 @@ noscript {
 		height: 300px;
 		position: relative;
 		overflow: hidden;
-		cursor: pointer;
 		background-color: #fff;
 		&:hover{
 			.gallery__overlay {
@@ -147,6 +169,7 @@ noscript {
 	}
 	&__img {
 		width: 100%;
+		height: 100%;
 	}
 	&__overlay {
 		width: 100%;
@@ -167,6 +190,7 @@ noscript {
 		position: absolute;
 		top: $itemPaddings;
 		left: $itemPaddings;
+		cursor: default;
 	}
 	&__tech-icon {
 		position: absolute;
@@ -199,8 +223,8 @@ noscript {
 		}
 	}
 	&__full {
-		width: 100%;
-		height: 100%;
+		width: 20%;
+		height: 20%;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -262,7 +286,7 @@ noscript {
 	position: relative;
 	&__copyright {
 		font-family: 'Lato', Arial, Helvetica, sans-serif;
-		color: #B5F45F;
+		color: #FFC78D;
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%)

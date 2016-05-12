@@ -18,18 +18,11 @@
 	
 	<script>
 		$(window).load(function() { 
-		    $('.loader_inner').delay(1000).fadeOut(); 
-		    $('.loader').delay(1200).fadeOut('slow'); 
+		    $('.loader_inner').delay(500).fadeOut(); 
+		    $('.loader').delay(600).fadeOut('slow'); 
 		});
 	</script>
 	<style>
-		.svg {
-			height: 100px;
-		  width: 100px;
-			stroke-dasharray: 4088.00 4088.00;
-			stroke-dashoffset: 0;
-			animation: stroke .7s linear infinite reverse;
-		}
 		.loader {
 		  background: none repeat scroll 0 0 #fff;
 		  bottom: 0;
@@ -45,33 +38,15 @@
 		  background-size: cover;
 		  background-repeat: no-repeat;
 		  background-position: center center;
+		  background-image: url(img/loader.gif);
 		  background-color: #fff;
-		  height: 100px;
-		  width: 100px;
-		  padding: 30px;
-		  margin-top: -80px;
-		  margin-left: -80px;
+		  height: 64px;
+		  width: 62px;
+		  margin-top: -30px;
+		  margin-left: -30px;
 		  left: 50%;
 		  top: 50%;
 		  position: absolute;
-		  -webkit-box-shadow: 0px 0px 400px 1px rgba(104,58,183,0.5);
-		  -moz-box-shadow: 0px 0px 400px 1px rgba(104,58,183,.5);
-		  box-shadow: 0px 0px 400px 1px rgba(104,58,183,.5);
-		  border-radius: 50%;
-		  animation: loader .7s linear infinite alternate;
-		}
-
-		@keyframes stroke {
-		  100% {
-		    stroke-dashoffset: 4088.00;
-		  }
-		}
-		@keyframes loader {
-		  100% {
-		    -webkit-box-shadow: 0px 0px 100px 1px rgba(104,58,183,.5);
-		    -moz-box-shadow: 0px 0px 100px 1px rgba(104,58,183,.5);
-		    box-shadow: 0px 0px 100px 1px rgba(104,58,183,.5);
-		  }
 		}
 	</style>
 	<script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
@@ -87,18 +62,6 @@
 	<div class="loader">
 		<div class="loader_inner">
 
-			<svg class="svg"
-			   xmlns="http://www.w3.org/2000/svg"
-			   viewBox="0 0 744.09449 850.39367">
-			  <g
-			     transform="translate(0,-201.96859)"
-			     id="layer1">
-			    <path
-			       id="path3434"
-			       d="M 365.45287,206.04288 C 284.39909,343.99905 227.72479,490.7266 173.91239,636.92872 132.67184,748.97455 86.339161,859.71779 43.66485,971.02134 c -2.7097,7.0675 -26.451064,74.93666 -34.4772756,74.93666 -2.5538728,0 -1.5323388,-4.5794 0,-6.2447 C 28.10994,1019.1493 44.016491,997.67768 58.988087,974.14371 68.717841,958.84939 77.271999,943.07057 85.803762,927.30828 119.93665,864.24839 112.42672,866.6775 158.58914,805.5362 274.27727,652.30942 443.94028,528.60624 595.30145,399.62927 c 22.85273,-19.47316 141.73994,-112.511 141.73994,-143.6286 0,-3.75262 -4.40606,6.71357 -7.66162,9.36707 -42.90505,34.97045 18.3879,-18.10969 -45.96971,34.34598 -47.64831,38.83649 -104.02957,69.20895 -157.0632,103.0379 -99.77391,63.64354 -188.02278,128.88373 -279.64909,199.83112 -55.76381,43.1786 -115.08759,82.94222 -157.063207,134.26153 -10.385236,12.69697 51.731727,38.5177 61.292947,43.71305 73.66046,40.02539 370.25146,182.58459 409.89665,231.05468"
-			       style="fill:none;fill-rule:evenodd;stroke:rgba(104,58,183,1);stroke-width:30.7118665px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-			  </g>
-			</svg>
 		</div>
 	</div>
 
@@ -198,7 +161,10 @@
 				<p>Frontend Developer</p>
 			</a>
 		</div>
-
+		<div class="quote">
+			<h4 class="quote__text">Stan, don't you know the first law of physics? Anything that's fun costs at least eight dollars.</h4>
+			<p class="quote__author">—Eric Cartman, "Trapped in the Closet"</p>
+		</div>
 		<ul class="header-socials clearfix">
 			<li class="header-socials__item"><a href="#" >
 				<svg class="header-socials__icon header-socials__icon--facebook">
@@ -245,7 +211,7 @@
 	</footer>
 	
 
-	<script type="text/template" id="list-template">
+	<script type="text/template" id="grid-template">
 		<% for(var i = 0; i < data.length; i++) { %>
 				
 		<div class="gallery__col item">
