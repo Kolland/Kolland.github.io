@@ -1,6 +1,7 @@
 @import "var.scss";
 html {
 	background-color: $bottom-bg-color;
+	background-image: url(../img/texture.png);
 }
 // common styles
 body {
@@ -10,7 +11,7 @@ body {
 	background: -webkit-linear-gradient(top, $top-bg-color 0%, $bottom-bg-color 100%);
 	background: -o-linear-gradient(top, $top-bg-color 0%, $bottom-bg-color 100%);
 	background: -ms-linear-gradient(top, $top-bg-color 0%, $bottom-bg-color 100%);
-	background: linear-gradient(to bottom, $top-bg-color 0%, $bottom-bg-color 100%);
+	background: url(../img/texture.png), linear-gradient(to bottom, $top-bg-color 0%, $bottom-bg-color 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FF512F', GradientType=0 );
 }
 .clearfix:after {
@@ -61,7 +62,7 @@ noscript {
 		text-align: center;
 		font-style: italic;
 		font-weight: 400;
-
+		font-size: 16px;
 	}
 	&__author {
 		text-align: right;
@@ -129,9 +130,23 @@ noscript {
 }
 
 // Gallery Styles
+@keyframes item {
+  0% {
+    transform: scale(.3);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+}
+.cssanimations .gallery__item {
+	animation: item 0.5s cubic-bezier(0, 0, 0.2, 1);
+	-webkit-animation-delay: .6s;
+  animation-delay: .6s;
+}
 
 .gallery {
-	overflow: hidden;
+	// overflow: hidden;
 	// width: 100%;
 	transition: padding-left .5s ease-out .5s;
 	z-index: -1;
