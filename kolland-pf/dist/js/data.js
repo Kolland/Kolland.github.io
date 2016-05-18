@@ -116,7 +116,7 @@ var portfolioItems = [
 			classification: 'Trello Angular Clone',
 			techStack: 'HTML5, CSS3/Foundation, AngularJS',
 			method: 'Responsive Web',
-			fullPic: 'trello-full.jpg',
+			fullPic: 'trello-full.JPG',
 			tmbPic: 'trello-thumb.jpg',
 			link: 'https://kolland.github.io/Trello_angular/index.html',
 			techIcons: [
