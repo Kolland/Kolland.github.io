@@ -119,6 +119,7 @@ noscript {
   animation-delay: .3s; }
 
 .gallery {
+  overflow: hidden;
   transition: padding-left .5s ease-out .5s;
   z-index: -1; }
   .gallery:hover {
