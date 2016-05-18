@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 	window.onresize = function(event) {
 		setViewport();
 	};
-
+	
 	function setViewport(){
 		var mvp;
 

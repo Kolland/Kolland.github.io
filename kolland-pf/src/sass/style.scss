@@ -149,15 +149,15 @@ noscript {
 .gallery {
 	overflow: hidden;
 	// width: 100%;
-	transition: padding-left .5s ease-out .5s;
+	transition: padding-left .3s ease-out .5s;
 	z-index: -1;
 	&:hover {
 		padding-left: 65px;
 		.owl-prev {
-			top: 459px;
+			top: 53%;
 		}
 		.owl-next {
-			top: 405px;
+			top: 47%;
 		}
 	}
 	&__col {

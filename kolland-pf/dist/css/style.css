@@ -120,14 +120,14 @@ noscript {
 
 .gallery {
   overflow: hidden;
-  transition: padding-left .5s ease-out .5s;
+  transition: padding-left .3s ease-out .5s;
   z-index: -1; }
   .gallery:hover {
     padding-left: 65px; }
     .gallery:hover .owl-prev {
-      top: 459px; }
+      top: 53%; }
     .gallery:hover .owl-next {
-      top: 405px; }
+      top: 47%; }
   .gallery__col {
     width: 400px; }
   .gallery__item {
