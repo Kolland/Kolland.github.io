@@ -6,7 +6,7 @@ var portfolioItems = [
 			method: 'Responsive Web, Mobile First, BEM',
 			fullPic: 'urlaubsgluck-screens.jpg',
 			tmbPic: 'urlaubsgluck-thumb.jpg',
-			link: 'https://kolland.github.io/GoIT/js/exam/dist/index.html',
+			link: 'http://kolland.github.io/GoIT/js/exam/dist/index.html',
 			techIcons: [
 				'html5',
 				'sass',
