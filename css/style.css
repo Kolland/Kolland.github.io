@@ -115,8 +115,8 @@ noscript {
     transform: scale(1); } }
 .cssanimations .gallery__item {
   animation: item 0.5s cubic-bezier(0, 0, 0.2, 1);
-  -webkit-animation-delay: .6s;
-  animation-delay: .6s; }
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s; }
 
 .gallery {
   transition: padding-left .5s ease-out .5s;
@@ -136,21 +136,16 @@ noscript {
     overflow: hidden;
     background-color: #fff; }
     .gallery__item:hover .gallery__overlay {
-      visibility: visible;
+      display: block;
       background-color: rgba(0, 0, 0, 0.8);
-      border: 1px solid #fff;
-      opacity: 1; }
-    .gallery__item:hover .gallery__tech-icon {
-      bottom: 30px;
-      visibility: visible;
-      opacity: 1; }
+      border: 1px solid #fff; }
   .gallery__img {
     width: 100%;
     height: 100%; }
   .gallery__overlay {
     width: 100%;
     height: 100%;
-    visibility: hidden;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -167,12 +162,10 @@ noscript {
     cursor: default; }
   .gallery__tech-icon {
     position: absolute;
-    bottom: -210px;
+    bottom: 30px;
     height: 40px;
     width: 40px;
-    float: left;
-    visibility: hidden;
-    opacity: 0; }
+    float: left; }
     .gallery__tech-icon--0 {
       left: 30px; }
     .gallery__tech-icon--1 {
