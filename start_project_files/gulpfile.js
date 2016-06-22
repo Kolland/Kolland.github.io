@@ -1,36 +1,42 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
-var svgstore = require('gulp-svgstore');
-var svgmin = require('gulp-svgmin');
+var nunjucksRender = require('gulp-nunjucks-render');
+var plumber = require('gulp-plumber');
 var path = require('path');
 
-
+//sass
 gulp.task('sass', function () {
 	sass('src/sass/style.scss', { sourcemap: true })
     .on('error', sass.logError)
  	
-    .pipe(gulp.dest('dest/css'));
+    .pipe(gulp.dest('dist/css'));
 
 });
 
-gulp.task('svgstore', function () {
-    return gulp
-        .src('src/svg_icons/*.svg')
-        .pipe(svgmin(function (file) {
-            var prefix = path.basename(file.relative, path.extname(file.relative));
-            return {
-                plugins: [{
-                    cleanupIDs: {
-                        prefix: prefix + '-',
-                        minify: true
-                    }
-                }]
-            }
-        }))
-        .pipe(svgstore())
-        .pipe(gulp.dest('dest/img'));
+//nunjucks template
+gulp.task('nunjucks', function() {
+  // Gets .html and .nunjucks files in pages
+  return gulp.src('src/pages/**/*.html')
+  // Renders template with nunjucks
+  .pipe(nunjucksRender({
+      path: ['src/templates']
+    }))
+  // output files in app folder
+  .pipe(gulp.dest('dist'))
 });
 
+//all pages
+gulp.task('nj_all', function () {
+  return gulp.src('src/pages/**/*.html')
+    .pipe(plumber())
+    .pipe(nunjucksRender({
+      path: ['src/templates/'] // String or Array
+    }))
+    .pipe(gulp.dest('dist'));
+});
+
+//watcher
 gulp.task('watch', function () {
-	gulp.watch('src/sass/style.scss', ['sass'])
+	gulp.watch('src/sass/style.scss', ['sass']);
+  gulp.watch(['src/pages/**/*.html', 'src/templates/**/*.html' ], ['nunjucks']);
 });

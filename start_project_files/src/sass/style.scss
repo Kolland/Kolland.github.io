@@ -1,6 +1,16 @@
+@import 'init';
+@import 'var';
+@import 'dl-menu';
+@import 'magnific-animations';
+
+
 /*Common*/
 .clearfix:after {
   content: "";
   display: block;
   clear: both; 
+}
+
+html, body {
+	height: 100%;
 }

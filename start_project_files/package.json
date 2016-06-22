@@ -1,17 +1,17 @@
 {
-  "name": "lesson_9-10",
-  "version": "0.0.0",
+  "name": "sitebuilder",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "BSD-2-Clause",
+  "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-ruby-sass": "^2.0.6",
-    "gulp-svgmin": "^1.2.1",
-    "gulp-svgstore": "^5.0.5",
-  },
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-ruby-sass": "^2.0.6"
+  }
 }

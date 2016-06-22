@@ -1,0 +1,18 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %} {% block content %}
+
+<!-- HEADER -->
+{% set header = {he: 'Mark', she: 'Jessie', color: '&'}  %} 
+
+<header class="main-header">
+	<img src="img/bg/header.jpg" alt="header-background" class="main-header__bg">
+	<div class="container">
+		<div class="row text-center marg-lg-t280 marg-sm-t90 marg-lg-b280 marg-sm-b90 ">
+
+			{% include "partials/header.html" %}
+
+		</div>
+	</div>
+</header>
+
+{% endblock %}
